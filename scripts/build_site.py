@@ -36,6 +36,7 @@ def analytics_tag():
             "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
             f"gtag('js',new Date());gtag('config','{GA_ID}');</script>\n")
 
+
 ENTITIES = {
     "univ": {"key": "u", "prefix": "", "detail": "universities", "label": "大学", "names": universities.BY_SLUG},
     "org": {"key": "o", "prefix": "orgs/", "detail": "institutions", "label": "企業・研究機関",
