@@ -120,7 +120,8 @@ BY_SLUG = {slug: (ja, en) for slug, ja, en, _ in UNIVERSITIES}
 
 FOREIGN = re.compile(
     r"\b(USA|U\.S\.A|United States|China|Korea|Taiwan|Singapore|Germany|France|Netherlands|Belgium|"
-    r"Switzerland|Italy|UK|United Kingdom|Canada|India|Macau|Hong Kong)\b")
+    r"Switzerland|Italy|UK|United Kingdom|Canada|India|Macau|Hong Kong|Israel|Sweden|Spain|Austria|"
+    r"Denmark|Norway|Finland|Ireland|Poland|Australia|Vietnam|Thailand|Malaysia|Brazil|Mexico)\b")
 FORMER = re.compile(r"formerly|emerit|previously|now (with|at)|was with", re.I)
 
 

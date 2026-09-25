@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw"
 MAILTO = "kyoshioka47@keio.jp"
-YEARS = range(2022, 2027)
+YEARS = range(2021, 2027)
 
 # conf id -> (crossref query, regex that the container-title must match)
 CONFS = {
