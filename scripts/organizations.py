@@ -79,6 +79,8 @@ ORGANIZATIONS = [
 
 COMPILED = [(slug, ja, en, re.compile(pat), foreign) for slug, ja, en, pat, foreign in ORGANIZATIONS]
 BY_SLUG = {slug: (ja, en) for slug, ja, en, _, _ in ORGANIZATIONS}
+# Overseas sites that the shared country list misses: US state codes (",CA"), U.K., Europe.
+OVERSEAS = re.compile(r",\s*[A-Z]{2}\s*(,|$)|\bU\.K\b|\bEurope\b|\bCambridge\b|\bBristol\b|\bB\.V\b|\bGmbH\b")
 JAPAN = re.compile(r"Japan|Tokyo|Kanagawa|Yokohama|Kawasaki|Atsugi|Osaka|Kyoto|Nagoya|Aichi|Tsukuba|Ibaraki|"
                    r"Yokkaichi|Kumamoto|Nagasaki|Hiroshima|Sendai|Fukuoka|Sapporo|Hokkaido|Kobe|Saitama|Chiba")
 
@@ -92,7 +94,7 @@ def match(aff: str):
             if foreign:
                 # foreign companies: only their sites in Japan
                 return slug if "Japan" in aff else None
-            if FOREIGN.search(aff) and not JAPAN.search(aff):
+            if (FOREIGN.search(aff) or OVERSEAS.search(aff)) and not JAPAN.search(aff):
                 return None
             return slug
     return None
