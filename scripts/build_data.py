@@ -25,7 +25,13 @@ NON_PAPER = re.compile(
     r"title page|program|conference|organizing|reviewers|technical program|executive committee|"
     r"student research preview|demonstration session|ise[- ]|women in circuits|"
     r"[FT]\d+:|SC\d|EE\d|ES\d|SE\d|F\d\.\d|T\d+\b|"
-    r"introduction to|the [0-9]+(st|nd|rd|th) .* (conference|symposium)"
+    r"introduction to|the [0-9]+(st|nd|rd|th) .* (conference|symposium)|"
+    # journal front matter / editorials
+    r"guest editorial|editorial|corrections? to|erratum|errata|retraction|expression of concern|"
+    r"information for authors|ieee journal of solid-state circuits|techrxiv|new associate editor|"
+    r"introducing|together, we|new invited paper|blank page|[0-9]{4} index|in memoriam|obituary|"
+    r"ieee open access|become a|get published|member get|share your preprint|"
+    r"[0-9]{4} ieee (international|asian|custom|european|symposium)"
     r")",
     re.I,
 )

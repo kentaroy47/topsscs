@@ -1,6 +1,13 @@
 # TopSSCS
 
-固体回路系トップ国際会議（ISSCC・VLSI Symposium・CICC・A-SSCC・ESSCIRC/ESSERC）の論文数をもとに、日本の大学をランキングする静的サイトです。[TopCsUniv](https://topcsuniv.org/japan/) の集計方式（フルカウント、F1式ポイントによる総合ランキング）を固体回路分野に当てはめた非公式版です。
+固体回路系トップ国際会議・論文誌（ISSCC・VLSI Symposium・JSSC・CICC・A-SSCC・ESSCIRC/ESSERC）の論文数をもとに、日本の大学をランキングする静的サイトです。[TopCsUniv](https://topcsuniv.org/japan/) の集計方式（フルカウント、F1式ポイントによる総合ランキング）を固体回路分野に当てはめた非公式版です。
+
+## Tier と重み
+
+総合ランキングでは、F1式の配点に Tier ごとの重みを掛けます（`scripts/conferences.py` の `TIER_WEIGHT`）。
+
+- Tier 1（×1.0）: ISSCC, VLSI, JSSC
+- Tier 2（×0.5）: CICC, A-SSCC, ESSERC
 
 ## 仕組み
 

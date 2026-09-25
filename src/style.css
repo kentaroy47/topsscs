@@ -172,3 +172,8 @@ section + section { margin-top: 2.5rem; }
   .doi-link { grid-column: 2; }
   .site-footer { flex-direction: column; }
 }
+
+.tier-tag { align-self: center; margin: 0 .1rem 0 .4rem; color: var(--muted);
+  font: 700 .66rem/1 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .08em; text-transform: uppercase; }
+.tier-label { display: block; color: var(--muted); font-size: .64rem; font-weight: 600; letter-spacing: .02em; }
+.univ-table .tier-label { display: inline; margin-left: .35rem; }

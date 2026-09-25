@@ -8,7 +8,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from conferences import BY_ID, CONFERENCES, EDITION, YEARS  # noqa: E402
+from conferences import BY_ID, CONFERENCES, EDITION, TIER_WEIGHT, YEARS, weight  # noqa: E402
 from universities import BY_SLUG  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -56,7 +56,7 @@ def championship(papers, confs, exclude=None):
         table = rank_table(conf_counts(papers, c, exclude))
         per_conf[c] = {r["slug"]: r for r in table}
         for r in table:
-            total[r["slug"]] += POINTS[r["rank"] - 1] if r["rank"] <= len(POINTS) else 0
+            total[r["slug"]] += points_for(r["rank"], c)
     slugs = set().union(*[set(t) for t in per_conf.values()]) if per_conf else set()
     for s in slugs:
         total.setdefault(s, 0)
@@ -65,8 +65,17 @@ def championship(papers, confs, exclude=None):
     return [{"slug": s, "points": n, "rank": r} for (s, n), r in zip(rows, ranks)], per_conf
 
 
-def points_for(rank):
-    return POINTS[rank - 1] if rank <= len(POINTS) else 0
+def points_for(rank, conf):
+    """F1 points for a venue rank, scaled by the venue's tier weight."""
+    return (POINTS[rank - 1] if rank <= len(POINTS) else 0) * weight(conf)
+
+
+def wfmt(w):
+    return f"{w:.1f}"
+
+
+def fmt(x):
+    return f"{x:g}"
 
 
 # ------------------------------------------------------------------ html ----
@@ -77,7 +86,7 @@ def rel(depth):
 
 def page(title, body, depth, description=""):
     r = rel(depth)
-    desc = description or "TopSSCSは、ISSCC・VLSI・CICC・A-SSCC・ESSERCの論文数をもとに、日本の大学の集積回路研究を比較できるランキングサイトです。"
+    desc = description or "TopSSCSは、ISSCC・VLSI・JSSC・CICC・A-SSCC・ESSERCの論文数をもとに、日本の大学の集積回路研究を比較できるランキングサイトです。"
     return f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -110,7 +119,7 @@ def page(title, body, depth, description=""):
 def intro():
     return """<section class="page-intro">
 <h1>日本の集積回路研究を、競争でもっと面白く。</h1>
-<p class="lede">固体回路系トップ国際会議（ISSCC・VLSI・CICC・A-SSCC・ESSERC）の論文数をもとに日本の大学が競うスコアボード</p>
+<p class="lede">固体回路系トップ国際会議・論文誌（ISSCC・VLSI・JSSC・CICC・A-SSCC・ESSERC）の論文数をもとに日本の大学が競うスコアボード</p>
 </section>"""
 
 
@@ -119,8 +128,12 @@ def tabs(depth, current):
     cur_all = ' aria-current="true"' if current == "all" else ""
     out = ['<nav class="field-tabs" aria-label="ランキングを選択">',
            f'<a class="field-tab championship-tab" href="{r}index.html"{cur_all}>総合</a>']
+    prev_tier = None
     for c in CONFERENCES:
         cur = ' aria-current="true"' if current == c["id"] else ""
+        if c["tier"] != prev_tier:
+            out.append(f'<span class="tier-tag">Tier {c["tier"]}</span>')
+            prev_tier = c["tier"]
         out.append(f'<a class="field-tab" href="{r}{c["id"]}/index.html"{cur} lang="en">{esc(c["short"])}</a>')
     out.append("</nav>")
     return "\n".join(out)
@@ -144,9 +157,9 @@ def change_badge(cur_rank, prev_rank):
 
 def delta(n):
     if n > 0:
-        return f'<span class="delta increase">+{n}</span>'
+        return f'<span class="delta increase">+{fmt(n)}</span>'
     if n < 0:
-        return f'<span class="delta decrease">{n}</span>'
+        return f'<span class="delta decrease">{fmt(n)}</span>'
     return '<span class="delta">±0</span>'
 
 
@@ -174,7 +187,7 @@ def latest_unit(ry, conf):
 
 
 def latest_overall(ry):
-    return max(((max(ys), BY_ID[c]["month"], c) for c, ys in ry.items()))
+    return max((max(ys), BY_ID[c]["month"], c) for c, ys in ry.items() if BY_ID[c]["kind"] == "conference")
 
 
 # ---------------------------------------------------------------- pages -----
@@ -195,11 +208,12 @@ def build_index(papers, ry):
         trs.append(
             f'<tr>{rank_cell(r["rank"])}'
             f'<td><a class="university-link" href="universities/{s}/index.html">{esc(uname(s))}</a></td>'
-            f'<td class="numeric point-count-cell">{r["points"]}{delta(dp)}</td>'
+            f'<td class="numeric point-count-cell">{fmt(r["points"])}{delta(dp)}</td>'
             f'<td class="rank-change">{change_badge(r["rank"], pr)}</td></tr>')
 
     # breakdown table: rank (points) per conference
-    head = "".join(f'<th class="numeric" lang="en">{esc(BY_ID[c]["short"])}</th>' for c in confs)
+    head = "".join(f'<th class="numeric" lang="en">{esc(BY_ID[c]["short"])}<span class="tier-label">'
+                   f'Tier {BY_ID[c]["tier"]} ×{wfmt(weight(c))}</span></th>' for c in confs)
     brs = []
     for r in rows:
         s = r["slug"]
@@ -207,21 +221,21 @@ def build_index(papers, ry):
         for c in confs:
             e = per_conf[c].get(s)
             if e:
-                pts = points_for(e["rank"])
+                pts = points_for(e["rank"], c)
                 cls = "numeric" + (" scored" if pts else "")
                 cells.append(f'<td class="{cls}"><span class="bd-rank">{e["rank"]}位</span>'
-                             f'<span class="bd-pts">{pts}pt</span><span class="bd-n">{e["count"]}本</span></td>')
+                             f'<span class="bd-pts">{fmt(pts)}pt</span><span class="bd-n">{e["count"]}本</span></td>')
             else:
                 cells.append('<td class="numeric muted">–</td>')
         brs.append(f'<tr>{rank_cell(r["rank"])}<td><a class="university-link" href="universities/{s}/index.html">'
-                   f'{esc(uname(s))}</a></td>{"".join(cells)}<td class="numeric">{r["points"]}</td></tr>')
+                   f'{esc(uname(s))}</a></td>{"".join(cells)}<td class="numeric">{fmt(r["points"])}</td></tr>')
 
     status = live_status(ry)
     body = f"""{intro()}
 {tabs(0, "all")}
 <section class="ranking-card" aria-labelledby="ranking-title">
 <div class="ranking-head"><div>
-<p class="eyebrow">{EDITION} LIVE · {len(confs)}会議・同一ウェイト</p>
+<p class="eyebrow">{EDITION} LIVE · {tier_summary(confs)}</p>
 <h2 id="ranking-title">大学総合ランキング</h2>
 <p class="ranking-context">{" / ".join(esc(BY_ID[c]["short"]) for c in confs)} · Updated: {UPDATED} · Latest: {esc(BY_ID[lc]["short"])} {ly} added</p>
 </div><p class="record-count">{len(rows)}大学</p></div>
@@ -231,12 +245,12 @@ def build_index(papers, ry):
 <tbody>
 {chr(10).join(trs)}
 </tbody></table></div>
-<p class="status">会議別順位をF1方式でポイント化した大学総合ランキングです。「前回」は {esc(BY_ID[lc]["short"])} {ly} 反映前との比較です。<a href="methodology.html#championship">集計ルール</a></p>
+<p class="status">会議・論文誌ごとの順位をF1方式でポイント化し、Tierの重みを掛けて合計した大学総合ランキングです。「前回」は {esc(BY_ID[lc]["short"])} {ly} 反映前との比較です。<a href="methodology.html#championship">集計ルール</a></p>
 </section>
 
 <section class="breakdown" aria-labelledby="bd-title">
-<div class="ranking-head"><div><h2 id="bd-title">会議別内訳</h2>
-<p class="ranking-context">各会議での順位・獲得ポイント・論文数</p></div></div>
+<div class="ranking-head"><div><h2 id="bd-title">会議・論文誌別内訳</h2>
+<p class="ranking-context">各会議・論文誌での順位・獲得ポイント（重み適用後）・論文数</p></div></div>
 <div class="table-wrap"><table class="championship-breakdown">
 <thead><tr><th scope="col">順位</th><th scope="col">大学</th>{head}<th scope="col" class="numeric">合計</th></tr></thead>
 <tbody>
@@ -245,6 +259,15 @@ def build_index(papers, ry):
 </section>"""
     write(SITE / "index.html", page("TopSSCS | 日本の大学 固体回路トップ国際会議ランキング", body, 0))
     return rows, per_conf
+
+
+def tier_summary(confs):
+    parts = []
+    for t, w in sorted(TIER_WEIGHT.items()):
+        names = [BY_ID[c]["short"] for c in confs if BY_ID[c]["tier"] == t]
+        if names:
+            parts.append(f'Tier {t} ×{wfmt(w)}: {esc(", ".join(names))}')
+    return " · ".join(parts)
 
 
 def live_status(ry, conf=None):
@@ -285,7 +308,7 @@ def build_conf(papers, ry, conf):
 {tabs(1, conf)}
 <section class="ranking-card" aria-labelledby="ranking-title">
 <div class="ranking-head"><div>
-<p class="eyebrow">大学別集計</p>
+<p class="eyebrow">大学別集計 · Tier {c["tier"]}（総合ポイント ×{wfmt(weight(conf))}）</p>
 <h2 id="ranking-title"><span lang="en">{esc(c["short"])}</span> 大学ランキング</h2>
 <p class="ranking-context">{EDITION} LIVE · <a href="{c["url"]}" lang="en">{esc(c["name"])}</a> · {len(cp):,} papers
 <span class="japan-paper-presence">（日本の大学関与論文 {len(jp)} papers・{100 * len(jp) / max(1, len(cp)):.2f}%）</span></p>
@@ -364,9 +387,10 @@ def build_univ(papers, slug, champ_row, per_conf):
     for c in CONFERENCES:
         e = per_conf.get(c["id"], {}).get(slug)
         if e:
-            rows.append(f'<tr><td lang="en"><a href="../../{c["id"]}/universities/{slug}/index.html">{esc(c["short"])}</a></td>'
+            rows.append(f'<tr><td lang="en"><a href="../../{c["id"]}/universities/{slug}/index.html">{esc(c["short"])}</a>'
+                        f' <span class="tier-label">Tier {c["tier"]}</span></td>'
                         f'<td class="numeric">{e["count"]}</td><td class="numeric">{e["rank"]}位</td>'
-                        f'<td class="numeric">{points_for(e["rank"])}</td></tr>')
+                        f'<td class="numeric">{fmt(points_for(e["rank"], c["id"]))}</td></tr>')
         else:
             rows.append(f'<tr><td lang="en">{esc(c["short"])}</td><td class="numeric">0</td>'
                         f'<td class="numeric muted">–</td><td class="numeric">0</td></tr>')
@@ -379,13 +403,13 @@ def build_univ(papers, slug, champ_row, per_conf):
 <p class="eyebrow">大学</p>
 <h1>{esc(ja)}</h1>
 <p class="lede" lang="en">{esc(en)}</p>
-<p class="stat-line">総合 <strong>{champ_row["rank"]}</strong> 位 · <strong>{champ_row["points"]}</strong> pt · 対象論文 <strong>{len(ps)}</strong> 本</p>
+<p class="stat-line">総合 <strong>{champ_row["rank"]}</strong> 位 · <strong>{fmt(champ_row["points"])}</strong> pt · 対象論文 <strong>{len(ps)}</strong> 本</p>
 <p class="ranking-context">年別: {ystr}</p>
 </section>
 <section>
-<div class="ranking-head"><div><h2>会議別</h2></div></div>
+<div class="ranking-head"><div><h2>会議・論文誌別</h2></div></div>
 <div class="table-wrap"><table class="univ-table">
-<thead><tr><th scope="col">会議</th><th scope="col" class="numeric">論文数</th><th scope="col" class="numeric">順位</th><th scope="col" class="numeric">ポイント</th></tr></thead>
+<thead><tr><th scope="col">会議・論文誌</th><th scope="col" class="numeric">論文数</th><th scope="col" class="numeric">順位</th><th scope="col" class="numeric">ポイント</th></tr></thead>
 <tbody>{"".join(rows)}</tbody></table></div>
 </section>
 <section class="papers">
@@ -401,21 +425,24 @@ def build_univ(papers, slug, champ_row, per_conf):
 def build_methodology(ry):
     conf_rows = "\n".join(
         f'<tr><td lang="en"><strong>{esc(c["short"])}</strong></td><td lang="en">{esc(c["name"])}</td>'
+        f'<td>Tier {c["tier"]}（×{wfmt(weight(c["id"]))}）</td>'
         f'<td>{", ".join(str(y) for y in ry.get(c["id"], []))}</td></tr>' for c in CONFERENCES)
     pts = "".join(f"<td>{i}</td>" for i in range(1, 11))
-    pv = "".join(f"<td>{p}</td>" for p in POINTS)
+    pv = "".join(f"<td>{fmt(p * TIER_WEIGHT[1])}</td>" for p in POINTS)
+    pv2 = "".join(f"<td>{fmt(p * TIER_WEIGHT[2])}</td>" for p in POINTS)
     body = f"""<a class="back-link" href="index.html">← ランキングへ戻る</a>
 <article class="prose">
 <p class="eyebrow">集計方針</p>
 <h1>集計方法</h1>
-<p>TopSSCS は、IEEE Solid-State Circuits Society（SSCS）系のトップ国際会議における日本の大学の論文活動を、論文公開時点の所属情報に基づいて集計します。<a href="https://topcsuniv.org/japan/">TopCsUniv</a> の集計方式を固体回路分野に当てはめた非公式版です。</p>
+<p>TopSSCS は、IEEE Solid-State Circuits Society（SSCS）系のトップ国際会議・論文誌における日本の大学の論文活動を、論文公開時点の所属情報に基づいて集計します。<a href="https://topcsuniv.org/japan/">TopCsUniv</a> の集計方式を固体回路分野に当てはめた非公式版です。</p>
 
-<h2>対象会議</h2>
+<h2>対象会議・論文誌</h2>
 <div class="table-wrap"><table>
-<thead><tr><th>略称</th><th>会議名</th><th>反映済みの年</th></tr></thead>
+<thead><tr><th>略称</th><th>名称</th><th>Tier（重み）</th><th>反映済みの年</th></tr></thead>
 <tbody>{conf_rows}</tbody></table></div>
 <ul>
 <li>期間は {EDITION} の5年間（LIVE）です。2026年の会議が未開催、または論文メタデータ未公開の会議は2022–2025を集計します。</li>
+<li>JSSC は印刷版の掲載号の年で集計します。印刷版が未刊行の早期公開（Early Access）論文はオンライン公開年で数えます。編集記事、特集号の序文、訂正記事などは除外します。</li>
 <li>VLSI Symposium は Technology と Circuits の合同開催、ESSERC（2024年〜）は ESSCIRC と ESSDERC の統合会議のため、会議全体の論文を対象としています。2022–2023 は ESSCIRC のみです。</li>
 </ul>
 
@@ -430,22 +457,26 @@ def build_methodology(ry):
 </ul>
 
 <h2 id="championship">大学総合ランキング</h2>
-<p>各会議で大学別論文数に基づく順位をポイントへ変換し、大学ごとに合計します。会議の重みはすべて同じです。ポイント配分は F1 の上位10位の基本配点を参考にしています。</p>
+<p>各会議・論文誌で大学別論文数に基づく順位をポイントへ変換し、Tierの重みを掛けて大学ごとに合計します。ポイント配分は F1 の上位10位の基本配点を参考にしています。</p>
+<ul>
+<li><strong>Tier 1（×{wfmt(TIER_WEIGHT[1])}）</strong>: {esc(", ".join(c["short"] for c in CONFERENCES if c["tier"] == 1))}</li>
+<li><strong>Tier 2（×{wfmt(TIER_WEIGHT[2])}）</strong>: {esc(", ".join(c["short"] for c in CONFERENCES if c["tier"] == 2))}</li>
+</ul>
 <div class="table-wrap"><table class="points-table">
-<thead><tr><th>会議順位</th>{pts}</tr></thead>
-<tbody><tr><th>ポイント</th>{pv}</tr></tbody></table></div>
+<thead><tr><th>順位</th>{pts}</tr></thead>
+<tbody><tr><th>Tier 1</th>{pv}</tr><tr><th>Tier 2</th>{pv2}</tr></tbody></table></div>
 <ul>
 <li>同点は標準競技順位（例: 1位、2位、2位、4位）とし、同順位には同じポイントを付与します。</li>
-<li>その会議で論文が0本の大学には順位を付けず、0ポイントとします。</li>
+<li>その会議・論文誌で論文が0本の大学には順位を付けず、0ポイントとします。</li>
 <li>総合ポイントが同じ大学は同順位です。</li>
-<li>「前回」列は、最も新しく反映した会議・年を除いた場合の順位との比較です。</li>
+<li>総合ランキングの「前回」列は、最も新しく反映した会議・年を除いた場合の順位との比較です（随時掲載のJSSCは起点にしません）。</li>
 </ul>
 
 <h2>著者表示</h2>
 <p>著者名は論文に記載された表記をそのまま使用しており、同一人物の名寄せは行っていません。著者の所属欄から大学を確認できた場合だけ著者一覧へ反映します。</p>
 
 <h2>読み方の注意</h2>
-<p>このランキングは、選定した国際会議での論文数を示すものです。研究の総合的な質、影響力、教育力、大学全体の優劣を測るものではありません。Crossref の所属表記の揺れや欠落により、取りこぼしや誤判定が含まれる可能性があります。</p>
+<p>このランキングは、選定した国際会議・論文誌での論文数を示すものです。研究の総合的な質、影響力、教育力、大学全体の優劣を測るものではありません。Crossref の所属表記の揺れや欠落により、取りこぼしや誤判定が含まれる可能性があります。</p>
 </article>"""
     write(SITE / "methodology.html", page("集計方法 | TopSSCS", body, 0))
 
