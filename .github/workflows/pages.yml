@@ -43,6 +43,8 @@ jobs:
           git diff --cached --quiet || git commit -m "Update data from Crossref" && git push
       - name: Build site
         run: python scripts/build_site.py
+        env:
+          GA_MEASUREMENT_ID: ${{ vars.GA_MEASUREMENT_ID }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

@@ -28,10 +28,14 @@
         var m = b.getAttribute("data-mode");
         try { localStorage.setItem(KEY, m); } catch (e) { /* storage unavailable */ }
         apply(m);
+        if (window.gtag) window.gtag("event", "counting_mode", { mode: m });
       });
     });
     document.querySelectorAll("select[data-nav]").forEach(function (s) {
-      s.addEventListener("change", function () { location.href = s.value; });
+      s.addEventListener("change", function () {
+        if (window.gtag) window.gtag("event", "edition_change", { edition: s.options[s.selectedIndex].text });
+        location.href = s.value;
+      });
     });
   });
 })();

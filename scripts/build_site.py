@@ -6,6 +6,8 @@ mode (full / first author / author-fractional, switched client-side).
 import datetime as dt
 import html
 import json
+import os
+import re
 import shutil
 import sys
 from collections import Counter, defaultdict
@@ -21,6 +23,18 @@ SITE = ROOT / "site"
 POINTS = [25, 18, 15, 12, 10, 8, 6, 4, 2, 1]
 _FETCHED = ROOT / "data" / "fetched_at.txt"
 UPDATED = _FETCHED.read_text(encoding="utf-8").strip() if _FETCHED.exists() else dt.date.today().isoformat()
+# Google Analytics 4 measurement ID (GitHub Actions repository variable); no tag when unset.
+GA_ID = os.environ.get("GA_MEASUREMENT_ID", "").strip()
+if GA_ID and not re.fullmatch(r"G-[A-Z0-9]+", GA_ID):
+    raise SystemExit(f"invalid GA_MEASUREMENT_ID: {GA_ID!r}")
+
+
+def analytics_tag():
+    if not GA_ID:
+        return ""
+    return (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>\n'
+            "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+            f"gtag('js',new Date());gtag('config','{GA_ID}');</script>\n")
 
 ENTITIES = {
     "univ": {"key": "u", "prefix": "", "detail": "universities", "label": "大学", "names": universities.BY_SLUG},
@@ -146,7 +160,7 @@ def layout(pg, title, body, description=""):
 <meta name="description" content="{esc(desc)}">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
-<link rel="stylesheet" href="{h('assets/style.css')}">
+{analytics_tag()}<link rel="stylesheet" href="{h('assets/style.css')}">
 <script src="{h('assets/site.js')}" defer></script>
 </head>
 <body>
