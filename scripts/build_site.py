@@ -229,6 +229,7 @@ LANG_BOOT = ("<script>(function(){var l=new URLSearchParams(location.search).get
 
 def layout(pg, title_ja, title_en, body):
     h = pg.href
+    creator = '<a href="https://github.com/kentaroy47" lang="en">Kentaro Yoshioka</a>'
     desc_ja = ("TopSSCSは、ISSCC・VLSI・JSSC・CICC・A-SSCC・ESSERCの論文数をもとに、"
                "大学・企業の集積回路研究を国別・世界で比較できるランキングサイトです。")
     return f"""<!DOCTYPE html>
@@ -258,6 +259,9 @@ def layout(pg, title_ja, title_en, body):
 <p><strong>TopSSCS</strong> {T("固体回路系トップ国際会議・論文誌における大学・企業の論文活動を可視化",
                               "Paper activity of universities and companies at top solid-state circuits venues")}</p>
 <p>Data: Crossref / OpenAlex · Updated {UPDATED} · <a href="{h('methodology.html')}">{T("集計ルール", "Methodology")}</a></p>
+<p class="footer-disclaimer">{T(
+    f"本サイトは {creator} がAIを活用して作成しました。内容には誤りが含まれる可能性があります。正確な情報は原論文・公式情報をご確認ください。",
+    f"Created by {creator} with the assistance of AI. This site may contain errors. Please verify information against the original papers and official sources.")}</p>
 </footer>
 </body>
 </html>
