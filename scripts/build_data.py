@@ -1,9 +1,14 @@
 """Filter raw Crossref items into papers and attribute them to Japanese institutions.
 
 Input : data/raw/<venue>_<year>.json   Crossref items
-        data/openalex.json             affiliations missing in Crossref (fill_openalex.py)
+        data/openalex.json             OpenAlex authorships (fill_openalex.py): affiliations missing
+                                       in Crossref, and institutions outside Japan
         data/track_labels.tsv          circuits/technology labels for joint venues
-Output: data/papers.json
+Output: data/papers.json, data/institutions.json
+
+Japanese institutions come from the curated matchers (universities.py /
+organizations.py) applied to Crossref affiliation strings; institutions in other
+countries come from OpenAlex institution IDs.
 """
 import csv
 import html
@@ -15,6 +20,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import global_orgs  # noqa: E402
 import organizations  # noqa: E402
 import universities  # noqa: E402
 from conferences import CONFERENCES, FETCH_YEARS, needs_track  # noqa: E402
@@ -101,15 +107,41 @@ def load_track_labels():
     return labels
 
 
-def openalex_affs(oa_authors, idx, name):
-    """Affiliations for the idx-th Crossref author from OpenAlex authorships."""
+def openalex_author(oa_authors, idx, name):
+    """The OpenAlex authorship of the idx-th Crossref author, or None."""
     if not oa_authors:
-        return []
+        return None
     fam = family_key(name)
     if idx < len(oa_authors) and family_key(oa_authors[idx]["name"]) == fam:
-        return oa_authors[idx]["affs"]
+        return oa_authors[idx]
     cands = [a for a in oa_authors if family_key(a["name"]) == fam]
-    return cands[0]["affs"] if len(cands) == 1 else []
+    return cands[0] if len(cands) == 1 else None
+
+
+def norm_aff(aff: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", aff.lower()).strip()
+
+
+def learn_aff_institutions(raw_items, openalex):
+    """Affiliation string -> OpenAlex institution IDs, learned from authors that have
+    exactly one Crossref affiliation and OpenAlex institutions. Used for authors whose
+    OpenAlex record has no institution."""
+    seen = defaultdict(Counter)
+    for doi, item in raw_items:
+        oa = openalex.get(doi)
+        for idx, a in enumerate(item.get("author") or []):
+            affs = a.get("affiliation") or []
+            if len(affs) != 1:
+                continue
+            oa_a = openalex_author(oa, idx, author_name(a))
+            if oa_a and oa_a["insts"]:
+                seen[norm_aff(html.unescape(affs[0]["name"]))][tuple(sorted(i["id"] for i in oa_a["insts"]))] += 1
+    table = {}
+    for key, c in seen.items():
+        ids, n = c.most_common(1)[0]
+        if n / sum(c.values()) >= 0.6:
+            table[key] = list(ids)
+    return table
 
 
 def assign_author_keys(papers):
@@ -144,48 +176,78 @@ def main():
     if (DATA / "openalex.json").exists():
         openalex = json.loads((DATA / "openalex.json").read_text(encoding="utf-8"))
     track_labels = load_track_labels()
-
-    papers, seen, dropped = [], set(), []
-    stats = Counter()
+    raw_items = []
     for conf in CONFERENCES:
         for year in FETCH_YEARS:
             path = RAW / f"{conf['id']}_{year}.json"
-            if not path.exists():
-                continue
-            for item in json.loads(path.read_text(encoding="utf-8")):
-                doi = item["DOI"].lower()
-                title = clean_title((item.get("title") or [""])[0])
-                key = (conf["id"], year, re.sub(r"\W", "", title.lower()))
-                if doi in seen or key in seen or not doi.startswith(("10.1109/", "10.23919/")):
-                    continue
-                if not is_paper(item):
-                    dropped.append((conf["id"], year, title))
-                    continue
-                seen.update((doi, key))
+            if path.exists():
+                raw_items += [(conf["id"], year, i) for i in json.loads(path.read_text(encoding="utf-8"))]
+    aff_table = learn_aff_institutions([(i["DOI"].lower(), i) for _, _, i in raw_items], openalex)
+    # OpenAlex institution -> group (brand / parent company), see global_orgs.py
+    lineage_path = DATA / "openalex_institutions.json"
+    oa_insts = json.loads(lineage_path.read_text(encoding="utf-8")) if lineage_path.exists() else {}
+    for authors in openalex.values():
+        for a in authors:
+            for inst in a["insts"]:
+                oa_insts.setdefault(inst["id"], {"name": inst["name"], "cc": inst["cc"],
+                                                 "type": inst["type"], "lineage": [inst["id"]]})
+    group_of, registry = {}, {}
+    for iid in oa_insts:
+        g = global_orgs.canonical(iid, oa_insts)
+        if g:
+            group_of[iid] = g[0]
+            registry[g[0]] = {"name": g[1], "cc": g[2], "type": g[3]}
 
-                authors = []
-                for idx, a in enumerate(item["author"]):
-                    name = author_name(a)
-                    affs = [html.unescape(x["name"]) for x in a.get("affiliation") or []]
-                    if not affs:
-                        affs = openalex_affs(openalex.get(doi), idx, name)
-                        stats["openalex_filled" if affs else "no_affiliation"] += 1
-                    authors.append({
-                        "name": name,
-                        "orcid": (a.get("ORCID") or "").rsplit("/", 1)[-1] or None,
-                        "affs": [{"u": universities.match(x), "o": organizations.match(x)} for x in affs],
-                    })
+    papers, seen, dropped = [], set(), []
+    stats = Counter()
+    for conf_id, year, item in raw_items:
+        doi = item["DOI"].lower()
+        title = clean_title((item.get("title") or [""])[0])
+        key = (conf_id, year, re.sub(r"\W", "", title.lower()))
+        if doi in seen or key in seen or not doi.startswith(("10.1109/", "10.23919/")):
+            continue
+        if not is_paper(item):
+            dropped.append((conf_id, year, title))
+            continue
+        seen.update((doi, key))
 
-                track = None
-                if needs_track(conf["id"], year):
-                    track = track_labels.get(doi)
-                    if track is None:
-                        track = heuristic_track(title)
-                        stats["track_heuristic"] += 1
-                papers.append({"doi": doi, "conf": conf["id"], "year": year, "title": title,
-                               "track": track, "authors": authors})
+        authors = []
+        oa = openalex.get(doi)
+        for idx, a in enumerate(item["author"]):
+            name = author_name(a)
+            oa_a = openalex_author(oa, idx, name)
+            affs = [html.unescape(x["name"]) for x in a.get("affiliation") or []]
+            if not affs:
+                affs = oa_a["affs"] if oa_a else []
+                stats["openalex_filled" if affs else "no_affiliation"] += 1
+            # institutions outside Japan: OpenAlex IDs (Japan is covered by the curated matchers)
+            ids = [i["id"] for i in oa_a["insts"]] if oa_a else []
+            if not ids:
+                ids = [x for aff in affs for x in aff_table.get(norm_aff(aff), [])]
+                if ids:
+                    stats["institution_from_string"] += 1
+            groups = [group_of[x] for x in ids if x in group_of]
+            abroad = [x for x in dict.fromkeys(groups) if registry[x]["cc"] != "JP"]
+            authors.append({
+                "name": name,
+                "orcid": (a.get("ORCID") or "").rsplit("/", 1)[-1] or None,
+                "affs": [{"u": universities.match(x), "o": organizations.match(x)} for x in affs],
+                "x": abroad,
+            })
+
+        track = None
+        if needs_track(conf_id, year):
+            track = track_labels.get(doi)
+            if track is None:
+                track = heuristic_track(title)
+                stats["track_heuristic"] += 1
+        papers.append({"doi": doi, "conf": conf_id, "year": year, "title": title,
+                       "track": track, "authors": authors})
 
     assign_author_keys(papers)
+    used = {x for p in papers for a in p["authors"] for x in a["x"]}
+    (DATA / "institutions.json").write_text(
+        json.dumps({k: registry[k] for k in sorted(used)}, ensure_ascii=False, indent=0), encoding="utf-8")
     (DATA / "papers.json").write_text(json.dumps(papers, ensure_ascii=False, indent=0), encoding="utf-8")
     (DATA / "dropped.txt").write_text("\n".join(f"{c}\t{y}\t{t}" for c, y, t in dropped), encoding="utf-8")
     jp = sum(1 for p in papers if any(f["u"] for a in p["authors"] for f in a["affs"]))

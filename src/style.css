@@ -229,3 +229,21 @@ section + section { margin-top: 2.5rem; }
   .site-header nav { gap: .7rem; font-size: .76rem; }
   .page-intro h1 { font-size: 1.55rem; }
 }
+
+/* bilingual text: site.js / the boot script set html[data-lang] */
+html:not([data-lang="en"]) .l-en { display: none !important; }
+html[data-lang="en"] .l-ja { display: none !important; }
+.lang-toggle { padding: .2rem .6rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
+  color: var(--ink); font: 700 .74rem/1.4 inherit; font-family: inherit; cursor: pointer; }
+.lang-toggle:hover { border-color: var(--accent); color: var(--accent-dark); }
+.site-header nav { align-items: center; }
+
+/* country switch */
+.scope-switch { display: inline-flex; flex-wrap: wrap; gap: .3rem; }
+.scope-switch a { padding: .3rem .8rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
+  color: var(--muted); font-size: .8rem; font-weight: 700; text-decoration: none; }
+.scope-switch a:hover { border-color: var(--accent); color: var(--accent-dark); }
+.scope-switch a[aria-current="true"] { border-color: var(--accent); background: var(--accent); color: var(--surface); }
+.cc { display: inline-block; margin-left: .3rem; padding: 0 .3rem; border: 1px solid var(--line); border-radius: 3px;
+  color: var(--muted); font: 700 .62rem/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; vertical-align: .12em; }
+.switches + .switches { margin-top: -6px; }

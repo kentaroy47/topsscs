@@ -1,0 +1,4172 @@
+{
+"B-amazon-us": {
+"name": "Amazon",
+"cc": "US",
+"type": "company"
+},
+"B-amd-ca": {
+"name": "AMD",
+"cc": "CA",
+"type": "company"
+},
+"B-amd-sg": {
+"name": "AMD",
+"cc": "SG",
+"type": "company"
+},
+"B-amd-us": {
+"name": "AMD",
+"cc": "US",
+"type": "company"
+},
+"B-analog-devices-ie": {
+"name": "Analog Devices",
+"cc": "IE",
+"type": "company"
+},
+"B-analog-devices-us": {
+"name": "Analog Devices",
+"cc": "US",
+"type": "company"
+},
+"B-apple-us": {
+"name": "Apple",
+"cc": "US",
+"type": "company"
+},
+"B-bosch-de": {
+"name": "Bosch",
+"cc": "DE",
+"type": "company"
+},
+"B-bosch-us": {
+"name": "Bosch",
+"cc": "US",
+"type": "company"
+},
+"B-broadcom-us": {
+"name": "Broadcom",
+"cc": "US",
+"type": "company"
+},
+"B-cadence-in": {
+"name": "Cadence",
+"cc": "IN",
+"type": "company"
+},
+"B-cadence-us": {
+"name": "Cadence",
+"cc": "US",
+"type": "company"
+},
+"B-ericsson-se": {
+"name": "Ericsson",
+"cc": "SE",
+"type": "company"
+},
+"B-google-us": {
+"name": "Google",
+"cc": "US",
+"type": "company"
+},
+"B-huawei-ca": {
+"name": "Huawei",
+"cc": "CA",
+"type": "company"
+},
+"B-huawei-cn": {
+"name": "Huawei",
+"cc": "CN",
+"type": "company"
+},
+"B-huawei-de": {
+"name": "Huawei",
+"cc": "DE",
+"type": "company"
+},
+"B-ibm-br": {
+"name": "IBM",
+"cc": "BR",
+"type": "company"
+},
+"B-ibm-ch": {
+"name": "IBM",
+"cc": "CH",
+"type": "company"
+},
+"B-ibm-de": {
+"name": "IBM",
+"cc": "DE",
+"type": "company"
+},
+"B-ibm-fr": {
+"name": "IBM",
+"cc": "FR",
+"type": "company"
+},
+"B-ibm-gb": {
+"name": "IBM",
+"cc": "GB",
+"type": "company"
+},
+"B-ibm-in": {
+"name": "IBM",
+"cc": "IN",
+"type": "company"
+},
+"B-ibm-us": {
+"name": "IBM",
+"cc": "US",
+"type": "company"
+},
+"B-infineon-at": {
+"name": "Infineon",
+"cc": "AT",
+"type": "company"
+},
+"B-infineon-de": {
+"name": "Infineon",
+"cc": "DE",
+"type": "company"
+},
+"B-infineon-us": {
+"name": "Infineon",
+"cc": "US",
+"type": "company"
+},
+"B-intel-de": {
+"name": "Intel",
+"cc": "DE",
+"type": "company"
+},
+"B-intel-il": {
+"name": "Intel",
+"cc": "IL",
+"type": "company"
+},
+"B-intel-in": {
+"name": "Intel",
+"cc": "IN",
+"type": "company"
+},
+"B-intel-us": {
+"name": "Intel",
+"cc": "US",
+"type": "company"
+},
+"B-lg-kr": {
+"name": "LG",
+"cc": "KR",
+"type": "company"
+},
+"B-lg-us": {
+"name": "LG",
+"cc": "US",
+"type": "company"
+},
+"B-marvell-il": {
+"name": "Marvell",
+"cc": "IL",
+"type": "company"
+},
+"B-marvell-us": {
+"name": "Marvell",
+"cc": "US",
+"type": "company"
+},
+"B-mediatek-cn": {
+"name": "MediaTek",
+"cc": "CN",
+"type": "company"
+},
+"B-mediatek-sg": {
+"name": "MediaTek",
+"cc": "SG",
+"type": "company"
+},
+"B-mediatek-tw": {
+"name": "MediaTek",
+"cc": "TW",
+"type": "company"
+},
+"B-meta-us": {
+"name": "Meta",
+"cc": "US",
+"type": "company"
+},
+"B-micron-it": {
+"name": "Micron",
+"cc": "IT",
+"type": "company"
+},
+"B-micron-sg": {
+"name": "Micron",
+"cc": "SG",
+"type": "company"
+},
+"B-micron-us": {
+"name": "Micron",
+"cc": "US",
+"type": "company"
+},
+"B-microsoft-us": {
+"name": "Microsoft",
+"cc": "US",
+"type": "company"
+},
+"B-nvidia-gb": {
+"name": "NVIDIA",
+"cc": "GB",
+"type": "company"
+},
+"B-nvidia-us": {
+"name": "NVIDIA",
+"cc": "US",
+"type": "company"
+},
+"B-nxp-": {
+"name": "NXP",
+"cc": "",
+"type": "company"
+},
+"B-nxp-be": {
+"name": "NXP",
+"cc": "BE",
+"type": "company"
+},
+"B-nxp-de": {
+"name": "NXP",
+"cc": "DE",
+"type": "company"
+},
+"B-nxp-nl": {
+"name": "NXP",
+"cc": "NL",
+"type": "company"
+},
+"B-nxp-us": {
+"name": "NXP",
+"cc": "US",
+"type": "company"
+},
+"B-qualcomm-us": {
+"name": "Qualcomm",
+"cc": "US",
+"type": "company"
+},
+"B-rambus-us": {
+"name": "Rambus",
+"cc": "US",
+"type": "company"
+},
+"B-realtek-cn": {
+"name": "Realtek",
+"cc": "CN",
+"type": "company"
+},
+"B-realtek-tw": {
+"name": "Realtek",
+"cc": "TW",
+"type": "company"
+},
+"B-samsung-": {
+"name": "Samsung",
+"cc": "",
+"type": "company"
+},
+"B-samsung-in": {
+"name": "Samsung",
+"cc": "IN",
+"type": "company"
+},
+"B-samsung-kr": {
+"name": "Samsung",
+"cc": "KR",
+"type": "company"
+},
+"B-samsung-us": {
+"name": "Samsung",
+"cc": "US",
+"type": "company"
+},
+"B-sk-hynix-kr": {
+"name": "SK hynix",
+"cc": "KR",
+"type": "company"
+},
+"B-sony-gb": {
+"name": "Sony",
+"cc": "GB",
+"type": "company"
+},
+"B-stmicroelectronics-ch": {
+"name": "STMicroelectronics",
+"cc": "CH",
+"type": "company"
+},
+"B-stmicroelectronics-fr": {
+"name": "STMicroelectronics",
+"cc": "FR",
+"type": "company"
+},
+"B-stmicroelectronics-gb": {
+"name": "STMicroelectronics",
+"cc": "GB",
+"type": "company"
+},
+"B-stmicroelectronics-in": {
+"name": "STMicroelectronics",
+"cc": "IN",
+"type": "company"
+},
+"B-stmicroelectronics-it": {
+"name": "STMicroelectronics",
+"cc": "IT",
+"type": "company"
+},
+"B-synopsys-be": {
+"name": "Synopsys",
+"cc": "BE",
+"type": "company"
+},
+"B-synopsys-us": {
+"name": "Synopsys",
+"cc": "US",
+"type": "company"
+},
+"B-texas-instruments-de": {
+"name": "Texas Instruments",
+"cc": "DE",
+"type": "company"
+},
+"B-texas-instruments-in": {
+"name": "Texas Instruments",
+"cc": "IN",
+"type": "company"
+},
+"B-texas-instruments-us": {
+"name": "Texas Instruments",
+"cc": "US",
+"type": "company"
+},
+"B-tsmc-cn": {
+"name": "TSMC",
+"cc": "CN",
+"type": "company"
+},
+"B-tsmc-tw": {
+"name": "TSMC",
+"cc": "TW",
+"type": "company"
+},
+"B-tsmc-us": {
+"name": "TSMC",
+"cc": "US",
+"type": "company"
+},
+"B-western-digital-cn": {
+"name": "Western Digital",
+"cc": "CN",
+"type": "company"
+},
+"B-western-digital-us": {
+"name": "Western Digital",
+"cc": "US",
+"type": "company"
+},
+"I100005738": {
+"name": "Brigham Young University",
+"cc": "US",
+"type": "education"
+},
+"I100066346": {
+"name": "University of Stuttgart",
+"cc": "DE",
+"type": "education"
+},
+"I100532134": {
+"name": "Lyon 1 Université",
+"cc": "FR",
+"type": "education"
+},
+"I100625452": {
+"name": "ON Semiconductor (United States)",
+"cc": "US",
+"type": "company"
+},
+"I100930933": {
+"name": "University College Dublin",
+"cc": "IE",
+"type": "education"
+},
+"I102064193": {
+"name": "University of Siena",
+"cc": "IT",
+"type": "education"
+},
+"I102335020": {
+"name": "Karlsruhe Institute of Technology",
+"cc": "DE",
+"type": "education"
+},
+"I103635307": {
+"name": "University of California, Riverside",
+"cc": "US",
+"type": "education"
+},
+"I106165777": {
+"name": "University of Central Florida",
+"cc": "US",
+"type": "education"
+},
+"I10654025": {
+"name": "SK Group (United States)",
+"cc": "US",
+"type": "company"
+},
+"I106645853": {
+"name": "Changchun University of Science and Technology",
+"cc": "CN",
+"type": "education"
+},
+"I106785703": {
+"name": "Institut polytechnique de Grenoble",
+"cc": "FR",
+"type": "education"
+},
+"I107077323": {
+"name": "Worcester Polytechnic Institute",
+"cc": "US",
+"type": "education"
+},
+"I107639228": {
+"name": "University of Notre Dame",
+"cc": "US",
+"type": "education"
+},
+"I107672454": {
+"name": "Dartmouth College",
+"cc": "US",
+"type": "education"
+},
+"I107720978": {
+"name": "Ain Shams University",
+"cc": "EG",
+"type": "education"
+},
+"I108290504": {
+"name": "University of Pisa",
+"cc": "IT",
+"type": "education"
+},
+"I108403487": {
+"name": "Warsaw University of Technology",
+"cc": "PL",
+"type": "education"
+},
+"I108523894": {
+"name": "Soitec (France)",
+"cc": "FR",
+"type": "company"
+},
+"I109935558": {
+"name": "Ningbo University",
+"cc": "CN",
+"type": "education"
+},
+"I110152177": {
+"name": "University of Akron",
+"cc": "US",
+"type": "education"
+},
+"I110273157": {
+"name": "Kookmin University",
+"cc": "KR",
+"type": "education"
+},
+"I111088046": {
+"name": "Boston University",
+"cc": "US",
+"type": "education"
+},
+"I111236770": {
+"name": "University of Vermont",
+"cc": "US",
+"type": "education"
+},
+"I111277659": {
+"name": "Chonnam National University",
+"cc": "KR",
+"type": "education"
+},
+"I111381250": {
+"name": "Hebei Medical University",
+"cc": "CN",
+"type": "education"
+},
+"I111979921": {
+"name": "Northwestern University",
+"cc": "US",
+"type": "education"
+},
+"I112936343": {
+"name": "École Centrale de Lyon",
+"cc": "FR",
+"type": "education"
+},
+"I113409471": {
+"name": "Kumoh National Institute of Technology",
+"cc": "KR",
+"type": "education"
+},
+"I113940042": {
+"name": "Shanghai University",
+"cc": "CN",
+"type": "education"
+},
+"I114017466": {
+"name": "University of Technology Sydney",
+"cc": "AU",
+"type": "education"
+},
+"I114027177": {
+"name": "University of North Carolina at Chapel Hill",
+"cc": "US",
+"type": "education"
+},
+"I114112103": {
+"name": "Leibniz University Hannover",
+"cc": "DE",
+"type": "education"
+},
+"I114395901": {
+"name": "University of Nebraska–Lincoln",
+"cc": "US",
+"type": "education"
+},
+"I114457229": {
+"name": "University of Geneva",
+"cc": "CH",
+"type": "education"
+},
+"I115053289": {
+"name": "Oxford Instruments (United Kingdom)",
+"cc": "GB",
+"type": "company"
+},
+"I115228651": {
+"name": "Agency for Science, Technology and Research",
+"cc": "SG",
+"type": "government"
+},
+"I115475287": {
+"name": "Oklahoma State University",
+"cc": "US",
+"type": "education"
+},
+"I116953780": {
+"name": "Tongji University",
+"cc": "CN",
+"type": "education"
+},
+"I1174212": {
+"name": "University of Southern California",
+"cc": "US",
+"type": "education"
+},
+"I117965899": {
+"name": "University of Hawaiʻi at Mānoa",
+"cc": "US",
+"type": "education"
+},
+"I118118575": {
+"name": "New Jersey Institute of Technology",
+"cc": "US",
+"type": "education"
+},
+"I118347636": {
+"name": "Australian National University",
+"cc": "AU",
+"type": "education"
+},
+"I118373667": {
+"name": "Seoul National University of Science and Technology",
+"cc": "KR",
+"type": "education"
+},
+"I118564535": {
+"name": "University of Bern",
+"cc": "CH",
+"type": "education"
+},
+"I119003972": {
+"name": "Roma Tre University",
+"cc": "IT",
+"type": "education"
+},
+"I119060216": {
+"name": "Hankyong National University",
+"cc": "KR",
+"type": "education"
+},
+"I120158604": {
+"name": "Kunsan National University",
+"cc": "KR",
+"type": "education"
+},
+"I120250893": {
+"name": "New York University Abu Dhabi",
+"cc": "AE",
+"type": "education"
+},
+"I121797337": {
+"name": "Leiden University",
+"cc": "NL",
+"type": "education"
+},
+"I121847817": {
+"name": "The Graduate Center, CUNY",
+"cc": "US",
+"type": "education"
+},
+"I121883995": {
+"name": "Johannes Kepler University of Linz",
+"cc": "AT",
+"type": "education"
+},
+"I121934306": {
+"name": "Tufts University",
+"cc": "US",
+"type": "education"
+},
+"I122346577": {
+"name": "University of Modena and Reggio Emilia",
+"cc": "IT",
+"type": "education"
+},
+"I122411786": {
+"name": "California Institute of Technology",
+"cc": "US",
+"type": "education"
+},
+"I122964287": {
+"name": "National Institute of Technology Tiruchirappalli",
+"cc": "IN",
+"type": "education"
+},
+"I123044942": {
+"name": "Universitat Autònoma de Barcelona",
+"cc": "ES",
+"type": "education"
+},
+"I12315562": {
+"name": "Texas Tech University",
+"cc": "US",
+"type": "education"
+},
+"I123900574": {
+"name": "Pohang University of Science and Technology",
+"cc": "KR",
+"type": "education"
+},
+"I124227911": {
+"name": "Ben-Gurion University of the Negev",
+"cc": "IL",
+"type": "education"
+},
+"I124633538": {
+"name": "University of Seoul",
+"cc": "KR",
+"type": "education"
+},
+"I125839683": {
+"name": "Beijing Institute of Technology",
+"cc": "CN",
+"type": "education"
+},
+"I126520041": {
+"name": "University of Science and Technology of China",
+"cc": "CN",
+"type": "education"
+},
+"I1280414376": {
+"name": "United States Air Force Research Laboratory",
+"cc": "US",
+"type": "facility"
+},
+"I1280536761": {
+"name": "Ames Research Center",
+"cc": "US",
+"type": "facility"
+},
+"I1282311441": {
+"name": "Lawrence Livermore National Laboratory",
+"cc": "US",
+"type": "facility"
+},
+"I12832649": {
+"name": "Gachon University",
+"cc": "KR",
+"type": "education"
+},
+"I1284598098": {
+"name": "King Abdulaziz City for Science and Technology",
+"cc": "SA",
+"type": "facility"
+},
+"I1287521167": {
+"name": "Lockheed Martin (United States)",
+"cc": "US",
+"type": "company"
+},
+"I129043915": {
+"name": "University of Udine",
+"cc": "IT",
+"type": "education"
+},
+"I12912129": {
+"name": "Northeastern University",
+"cc": "US",
+"type": "education"
+},
+"I1292082932": {
+"name": "MaxLinear (United States)",
+"cc": "US",
+"type": "company"
+},
+"I1294671590": {
+"name": "Centre National de la Recherche Scientifique",
+"cc": "FR",
+"type": "government"
+},
+"I1295297804": {
+"name": "Ciena (United States)",
+"cc": "US",
+"type": "company"
+},
+"I1295339012": {
+"name": "Boeing (United States)",
+"cc": "US",
+"type": "company"
+},
+"I130238516": {
+"name": "University of Minnesota",
+"cc": "US",
+"type": "education"
+},
+"I130442723": {
+"name": "Universidade Federal do Rio Grande do Sul",
+"cc": "BR",
+"type": "education"
+},
+"I1306686416": {
+"name": "RTX (United States)",
+"cc": "US",
+"type": "company"
+},
+"I130701444": {
+"name": "Georgia Institute of Technology",
+"cc": "US",
+"type": "education"
+},
+"I130769515": {
+"name": "Pennsylvania State University",
+"cc": "US",
+"type": "education"
+},
+"I131249849": {
+"name": "Oregon State University",
+"cc": "US",
+"type": "education"
+},
+"I1321296531": {
+"name": "National Institute of Standards and Technology",
+"cc": "US",
+"type": "government"
+},
+"I1322422313": {
+"name": "Tech University of Korea",
+"cc": "KR",
+"type": "education"
+},
+"I1324242722": {
+"name": "Shirley Ryan AbilityLab",
+"cc": "US",
+"type": "healthcare"
+},
+"I1324840837": {
+"name": "Hewlett-Packard (United States)",
+"cc": "US",
+"type": "company"
+},
+"I1325899441": {
+"name": "University Health Network",
+"cc": "CA",
+"type": "healthcare"
+},
+"I1329765538": {
+"name": "Universities Space Research Association",
+"cc": "US",
+"type": "nonprofit"
+},
+"I1330995197": {
+"name": "Boehringer Ingelheim (Germany)",
+"cc": "DE",
+"type": "company"
+},
+"I1331384533": {
+"name": "University of Hawaii System",
+"cc": "US",
+"type": "education"
+},
+"I1334627681": {
+"name": "Jet Propulsion Laboratory",
+"cc": "US",
+"type": "facility"
+},
+"I133529467": {
+"name": "Sharif University of Technology",
+"cc": "IR",
+"type": "education"
+},
+"I134085113": {
+"name": "King Fahd University of Petroleum and Minerals",
+"cc": "SA",
+"type": "education"
+},
+"I134161618": {
+"name": "National Taiwan Normal University",
+"cc": "TW",
+"type": "education"
+},
+"I134235054": {
+"name": "Sabancı Üniversitesi",
+"cc": "TR",
+"type": "education"
+},
+"I134560555": {
+"name": "Université Toulouse III - Paul Sabatier",
+"cc": "FR",
+"type": "education"
+},
+"I13469542": {
+"name": "Vrije Universiteit Brussel",
+"cc": "BE",
+"type": "education"
+},
+"I134820265": {
+"name": "Consejo Superior de Investigaciones Científicas",
+"cc": "ES",
+"type": "government"
+},
+"I135117807": {
+"name": "Université de Sherbrooke",
+"cc": "CA",
+"type": "education"
+},
+"I135140700": {
+"name": "University of Bonn",
+"cc": "DE",
+"type": "education"
+},
+"I135218257": {
+"name": "Swiss Center for Electronics and Microtechnology (Switzerland)",
+"cc": "CH",
+"type": "company"
+},
+"I135428043": {
+"name": "Cisco Systems (United States)",
+"cc": "US",
+"type": "company"
+},
+"I136199984": {
+"name": "Harvard University",
+"cc": "US",
+"type": "education"
+},
+"I137902535": {
+"name": "North Carolina State University",
+"cc": "US",
+"type": "education"
+},
+"I138689650": {
+"name": "University of Padua",
+"cc": "IT",
+"type": "education"
+},
+"I138826464": {
+"name": "Daegu Haany University",
+"cc": "KR",
+"type": "education"
+},
+"I138925566": {
+"name": "Ewha Womans University",
+"cc": "KR",
+"type": "education"
+},
+"I139024713": {
+"name": "Guangdong University of Technology",
+"cc": "CN",
+"type": "education"
+},
+"I139221136": {
+"name": "Centro Universitário FEI",
+"cc": "BR",
+"type": "education"
+},
+"I139264467": {
+"name": "Seoul National University",
+"cc": "KR",
+"type": "education"
+},
+"I13955877": {
+"name": "Bar-Ilan University",
+"cc": "IL",
+"type": "education"
+},
+"I141371507": {
+"name": "Soongsil University",
+"cc": "KR",
+"type": "education"
+},
+"I141596103": {
+"name": "University of Lisbon",
+"cc": "PT",
+"type": "education"
+},
+"I141945490": {
+"name": "University of British Columbia",
+"cc": "CA",
+"type": "education"
+},
+"I142401562": {
+"name": "Electronics and Telecommunications Research Institute",
+"cc": "KR",
+"type": "facility"
+},
+"I14243506": {
+"name": "Hong Kong Polytechnic University",
+"cc": "HK",
+"type": "education"
+},
+"I14245010": {
+"name": "University of Kragujevac",
+"cc": "RS",
+"type": "education"
+},
+"I142910587": {
+"name": "University of Salento",
+"cc": "IT",
+"type": "education"
+},
+"I142974352": {
+"name": "National Sun Yat-sen University",
+"cc": "TW",
+"type": "education"
+},
+"I143002897": {
+"name": "Université de Toulon",
+"cc": "FR",
+"type": "education"
+},
+"I143868143": {
+"name": "Anhui University",
+"cc": "CN",
+"type": "education"
+},
+"I145311948": {
+"name": "Johns Hopkins University",
+"cc": "US",
+"type": "education"
+},
+"I145487455": {
+"name": "Cairo University",
+"cc": "EG",
+"type": "education"
+},
+"I145808223": {
+"name": "Hanbat National University",
+"cc": "KR",
+"type": "education"
+},
+"I145847075": {
+"name": "TU Wien",
+"cc": "AT",
+"type": "education"
+},
+"I145894827": {
+"name": "Indian Institute of Technology Kharagpur",
+"cc": "IN",
+"type": "education"
+},
+"I146429904": {
+"name": "Incheon National University",
+"cc": "KR",
+"type": "education"
+},
+"I146655781": {
+"name": "University of Liverpool",
+"cc": "GB",
+"type": "education"
+},
+"I148099254": {
+"name": "National Chung Cheng University",
+"cc": "TW",
+"type": "education"
+},
+"I148283060": {
+"name": "Lawrence Berkeley National Laboratory",
+"cc": "US",
+"type": "facility"
+},
+"I148297040": {
+"name": "Netherlands Organisation for Applied Scientific Research",
+"cc": "NL",
+"type": "nonprofit"
+},
+"I148366613": {
+"name": "National Yang Ming Chiao Tung University",
+"cc": "TW",
+"type": "education"
+},
+"I148751991": {
+"name": "Sogang University",
+"cc": "KR",
+"type": "education"
+},
+"I149594827": {
+"name": "Xidian University",
+"cc": "CN",
+"type": "education"
+},
+"I150229711": {
+"name": "University of Electronic Science and Technology of China",
+"cc": "CN",
+"type": "education"
+},
+"I150468666": {
+"name": "Emory University",
+"cc": "US",
+"type": "education"
+},
+"I15057530": {
+"name": "Université de Bordeaux",
+"cc": "FR",
+"type": "education"
+},
+"I1516879": {
+"name": "Tarbiat Modares University",
+"cc": "IR",
+"type": "education"
+},
+"I151746483": {
+"name": "University of Waterloo",
+"cc": "CA",
+"type": "education"
+},
+"I152238500": {
+"name": "Chosun University",
+"cc": "KR",
+"type": "education"
+},
+"I152815399": {
+"name": "Singapore University of Technology and Design",
+"cc": "SG",
+"type": "education"
+},
+"I153718931": {
+"name": "University of Ottawa",
+"cc": "CA",
+"type": "education"
+},
+"I154099455": {
+"name": "Shandong University",
+"cc": "CN",
+"type": "education"
+},
+"I154338468": {
+"name": "University of Fribourg",
+"cc": "CH",
+"type": "education"
+},
+"I154425047": {
+"name": "University of Alberta",
+"cc": "CA",
+"type": "education"
+},
+"I154570441": {
+"name": "University of California, Santa Barbara",
+"cc": "US",
+"type": "education"
+},
+"I154851008": {
+"name": "Indian Institute of Technology Roorkee",
+"cc": "IN",
+"type": "education"
+},
+"I154864474": {
+"name": "National Taiwan University of Science and Technology",
+"cc": "TW",
+"type": "education"
+},
+"I155173764": {
+"name": "Rochester Institute of Technology",
+"cc": "US",
+"type": "education"
+},
+"I155781252": {
+"name": "University of South Carolina",
+"cc": "US",
+"type": "education"
+},
+"I157286207": {
+"name": "National University of Ireland, Maynooth",
+"cc": "IE",
+"type": "education"
+},
+"I157485424": {
+"name": "Korea Advanced Institute of Science and Technology",
+"cc": "KR",
+"type": "education"
+},
+"I157725225": {
+"name": "University of Illinois Urbana-Champaign",
+"cc": "US",
+"type": "education"
+},
+"I157773358": {
+"name": "Sun Yat-sen University",
+"cc": "CN",
+"type": "education"
+},
+"I158248296": {
+"name": "Amirkabir University of Technology",
+"cc": "IR",
+"type": "education"
+},
+"I158842170": {
+"name": "Chongqing University",
+"cc": "CN",
+"type": "education"
+},
+"I159129438": {
+"name": "Université du Québec à Montréal",
+"cc": "CA",
+"type": "education"
+},
+"I159948400": {
+"name": "Jinan University",
+"cc": "CN",
+"type": "education"
+},
+"I160013858": {
+"name": "Istituto Nazionale di Fisica Nucleare",
+"cc": "IT",
+"type": "government"
+},
+"I161024014": {
+"name": "Kwangwoon University",
+"cc": "KR",
+"type": "education"
+},
+"I161046081": {
+"name": "University of Freiburg",
+"cc": "DE",
+"type": "education"
+},
+"I161318765": {
+"name": "University of California, Los Angeles",
+"cc": "US",
+"type": "education"
+},
+"I162577319": {
+"name": "The University of Texas at Dallas",
+"cc": "US",
+"type": "education"
+},
+"I162827531": {
+"name": "Indian Institute of Technology Bombay",
+"cc": "IN",
+"type": "education"
+},
+"I162838928": {
+"name": "National Chung Hsing University",
+"cc": "TW",
+"type": "education"
+},
+"I162868743": {
+"name": "Tianjin University",
+"cc": "CN",
+"type": "education"
+},
+"I16365422": {
+"name": "Hefei University of Technology",
+"cc": "CN",
+"type": "education"
+},
+"I163753206": {
+"name": "Chungbuk National University",
+"cc": "KR",
+"type": "education"
+},
+"I16391192": {
+"name": "Tel Aviv University",
+"cc": "IL",
+"type": "education"
+},
+"I165230279": {
+"name": "Universitas Gadjah Mada",
+"cc": "ID",
+"type": "education"
+},
+"I165507594": {
+"name": "Kangwon National University",
+"cc": "KR",
+"type": "education"
+},
+"I165733156": {
+"name": "University of Georgia",
+"cc": "US",
+"type": "education"
+},
+"I165799507": {
+"name": "Rensselaer Polytechnic Institute",
+"cc": "US",
+"type": "education"
+},
+"I165932596": {
+"name": "National University of Singapore",
+"cc": "SG",
+"type": "education"
+},
+"I16609230": {
+"name": "Hunan University",
+"cc": "CN",
+"type": "education"
+},
+"I16733864": {
+"name": "National Taiwan University",
+"cc": "TW",
+"type": "education"
+},
+"I167360494": {
+"name": "University of Wuppertal",
+"cc": "DE",
+"type": "education"
+},
+"I167383011": {
+"name": "Henan University of Science and Technology",
+"cc": "CN",
+"type": "education"
+},
+"I16764540": {
+"name": "University of Suwon",
+"cc": "KR",
+"type": "education"
+},
+"I168635309": {
+"name": "University of Calgary",
+"cc": "CA",
+"type": "education"
+},
+"I168719708": {
+"name": "City University of Hong Kong",
+"cc": "HK",
+"type": "education"
+},
+"I169381384": {
+"name": "University of Groningen",
+"cc": "NL",
+"type": "education"
+},
+"I169689159": {
+"name": "PLA Information Engineering University",
+"cc": "CN",
+"type": "education"
+},
+"I170201317": {
+"name": "University of Pittsburgh",
+"cc": "US",
+"type": "education"
+},
+"I170215575": {
+"name": "National University of Defense Technology",
+"cc": "CN",
+"type": "education"
+},
+"I170897317": {
+"name": "Duke University",
+"cc": "US",
+"type": "education"
+},
+"I170979836": {
+"name": "Jadavpur University",
+"cc": "IN",
+"type": "education"
+},
+"I17145004": {
+"name": "Northwestern Polytechnical University",
+"cc": "CN",
+"type": "education"
+},
+"I171892758": {
+"name": "Forschungszentrum Jülich",
+"cc": "DE",
+"type": "facility"
+},
+"I172675005": {
+"name": "Nanyang Technological University",
+"cc": "SG",
+"type": "education"
+},
+"I172980758": {
+"name": "Kennesaw State University",
+"cc": "US",
+"type": "education"
+},
+"I173304897": {
+"name": "Universidad de Granada",
+"cc": "ES",
+"type": "education"
+},
+"I173911158": {
+"name": "Iowa State University",
+"cc": "US",
+"type": "education"
+},
+"I174216632": {
+"name": "City University of New York",
+"cc": "US",
+"type": "education"
+},
+"I174306211": {
+"name": "Technion – Israel Institute of Technology",
+"cc": "IL",
+"type": "education"
+},
+"I17442442": {
+"name": "State Grid Corporation of China (China)",
+"cc": "CN",
+"type": "company"
+},
+"I174458059": {
+"name": "National Technical University of Athens",
+"cc": "GR",
+"type": "education"
+},
+"I174878644": {
+"name": "University of Patras",
+"cc": "GR",
+"type": "education"
+},
+"I177477856": {
+"name": "Politecnico di Torino",
+"cc": "IT",
+"type": "education"
+},
+"I177725633": {
+"name": "Chinese University of Hong Kong",
+"cc": "HK",
+"type": "education"
+},
+"I177969490": {
+"name": "University of Southern Denmark",
+"cc": "DK",
+"type": "education"
+},
+"I178169726": {
+"name": "Southern Methodist University",
+"cc": "US",
+"type": "education"
+},
+"I178645029": {
+"name": "Illumina (United States)",
+"cc": "US",
+"type": "company"
+},
+"I179630473": {
+"name": "Institute of Photonic Sciences",
+"cc": "ES",
+"type": "facility"
+},
+"I180662265": {
+"name": "China Mobile (China)",
+"cc": "CN",
+"type": "company"
+},
+"I180670191": {
+"name": "University of California, San Francisco",
+"cc": "US",
+"type": "education"
+},
+"I180726961": {
+"name": "Shenzhen University",
+"cc": "CN",
+"type": "education"
+},
+"I181343428": {
+"name": "University of Zagreb",
+"cc": "HR",
+"type": "education"
+},
+"I181369854": {
+"name": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+"cc": "DE",
+"type": "education"
+},
+"I181397559": {
+"name": "Asia Pacific University of Technology & Innovation",
+"cc": "MY",
+"type": "education"
+},
+"I181547552": {
+"name": "Baylor College of Medicine",
+"cc": "US",
+"type": "education"
+},
+"I183067930": {
+"name": "Shanghai Jiao Tong University",
+"cc": "CN",
+"type": "education"
+},
+"I183697816": {
+"name": "Bangladesh University of Engineering and Technology",
+"cc": "BD",
+"type": "education"
+},
+"I183935753": {
+"name": "King's College London",
+"cc": "GB",
+"type": "education"
+},
+"I184942183": {
+"name": "University of Oslo",
+"cc": "NO",
+"type": "education"
+},
+"I1850255": {
+"name": "University of Basel",
+"cc": "CH",
+"type": "education"
+},
+"I185103710": {
+"name": "University of California, Santa Cruz",
+"cc": "US",
+"type": "education"
+},
+"I185261750": {
+"name": "University of Toronto",
+"cc": "CA",
+"type": "education"
+},
+"I185443292": {
+"name": "Wayne State University",
+"cc": "US",
+"type": "education"
+},
+"I187204187": {
+"name": "Gyeongju University",
+"cc": "KR",
+"type": "education"
+},
+"I187453708": {
+"name": "Institute for High Energy Physics",
+"cc": "ES",
+"type": "other"
+},
+"I187531555": {
+"name": "Lund University",
+"cc": "SE",
+"type": "education"
+},
+"I188538660": {
+"name": "University of Colorado Boulder",
+"cc": "US",
+"type": "education"
+},
+"I188935350": {
+"name": "Anhui University of Finance and Economics",
+"cc": "CN",
+"type": "education"
+},
+"I189158943": {
+"name": "University of Milan",
+"cc": "IT",
+"type": "education"
+},
+"I189442560": {
+"name": "Gyeongsang National University",
+"cc": "KR",
+"type": "education"
+},
+"I189772984": {
+"name": "Tzu Chi University",
+"cc": "TW",
+"type": "education"
+},
+"I189977406": {
+"name": "Universidad de Los Andes, Chile",
+"cc": "CL",
+"type": "education"
+},
+"I190497903": {
+"name": "Laboratoire d'Analyse et d'Architecture des Systèmes",
+"cc": "FR",
+"type": "facility"
+},
+"I191208505": {
+"name": "Xiamen University",
+"cc": "CN",
+"type": "education"
+},
+"I191879574": {
+"name": "Inha University",
+"cc": "KR",
+"type": "education"
+},
+"I192168892": {
+"name": "National University of Kaohsiung",
+"cc": "TW",
+"type": "education"
+},
+"I192455969": {
+"name": "York University",
+"cc": "CA",
+"type": "education"
+},
+"I193223587": {
+"name": "University of Trento",
+"cc": "IT",
+"type": "education"
+},
+"I193352282": {
+"name": "Daegu Gyeongbuk Institute of Science and Technology",
+"cc": "KR",
+"type": "education"
+},
+"I193427800": {
+"name": "Applied Materials (United States)",
+"cc": "US",
+"type": "company"
+},
+"I193775966": {
+"name": "Yonsei University",
+"cc": "KR",
+"type": "education"
+},
+"I196345858": {
+"name": "Chungnam National University",
+"cc": "KR",
+"type": "education"
+},
+"I196349391": {
+"name": "Universität Ulm",
+"cc": "DE",
+"type": "education"
+},
+"I196471810": {
+"name": "Korea Electrotechnology Research Institute",
+"cc": "KR",
+"type": "nonprofit"
+},
+"I196699116": {
+"name": "Wuhan University of Technology",
+"cc": "CN",
+"type": "education"
+},
+"I196972281": {
+"name": "Imec the Netherlands",
+"cc": "NL",
+"type": "facility"
+},
+"I19700959": {
+"name": "Florida International University",
+"cc": "US",
+"type": "education"
+},
+"I197312522": {
+"name": "Hyundai Motor Group (South Korea)",
+"cc": "KR",
+"type": "company"
+},
+"I197347611": {
+"name": "Korea University",
+"cc": "KR",
+"type": "education"
+},
+"I19820366": {
+"name": "Chinese Academy of Sciences",
+"cc": "CN",
+"type": "government"
+},
+"I199305430": {
+"name": "Nantong University",
+"cc": "CN",
+"type": "education"
+},
+"I200576644": {
+"name": "HRL Laboratories (United States)",
+"cc": "US",
+"type": "company"
+},
+"I200769079": {
+"name": "Hong Kong University of Science and Technology",
+"cc": "HK",
+"type": "education"
+},
+"I200845125": {
+"name": "Nanjing University of Information Science and Technology",
+"cc": "CN",
+"type": "education"
+},
+"I200870766": {
+"name": "Brookhaven National Laboratory",
+"cc": "US",
+"type": "facility"
+},
+"I20089843": {
+"name": "Princeton University",
+"cc": "US",
+"type": "education"
+},
+"I201448701": {
+"name": "University of Washington",
+"cc": "US",
+"type": "education"
+},
+"I20231570": {
+"name": "Peking University",
+"cc": "CN",
+"type": "education"
+},
+"I202697423": {
+"name": "University of Zurich",
+"cc": "CH",
+"type": "education"
+},
+"I204250578": {
+"name": "University of California, Irvine",
+"cc": "US",
+"type": "education"
+},
+"I204337017": {
+"name": "Aarhus University",
+"cc": "DK",
+"type": "education"
+},
+"I204465549": {
+"name": "Washington University in St. Louis",
+"cc": "US",
+"type": "education"
+},
+"I204512498": {
+"name": "University of Macau",
+"cc": "MO",
+"type": "education"
+},
+"I205156485": {
+"name": "Rohde & Schwarz (Germany)",
+"cc": "DE",
+"type": "company"
+},
+"I205237279": {
+"name": "Nankai University",
+"cc": "CN",
+"type": "education"
+},
+"I205490536": {
+"name": "Dongguk University",
+"cc": "KR",
+"type": "education"
+},
+"I205783295": {
+"name": "Cornell University",
+"cc": "US",
+"type": "education"
+},
+"I206597221": {
+"name": "Kongju National University",
+"cc": "KR",
+"type": "education"
+},
+"I207789805": {
+"name": "Lahore University of Management Sciences",
+"cc": "PK",
+"type": "education"
+},
+"I21193070": {
+"name": "Beijing Jiaotong University",
+"cc": "CN",
+"type": "education"
+},
+"I21491767": {
+"name": "Aix-Marseille Université",
+"cc": "FR",
+"type": "education"
+},
+"I21724602": {
+"name": "Hsuan Chuang University",
+"cc": "TW",
+"type": "education"
+},
+"I219193219": {
+"name": "Purdue University West Lafayette",
+"cc": "US",
+"type": "education"
+},
+"I22113271": {
+"name": "Teradyne (United States)",
+"cc": "US",
+"type": "company"
+},
+"I22265921": {
+"name": "National Central University",
+"cc": "TW",
+"type": "education"
+},
+"I223532165": {
+"name": "University of Utah",
+"cc": "US",
+"type": "education"
+},
+"I223822909": {
+"name": "Heidelberg University",
+"cc": "DE",
+"type": "education"
+},
+"I2250653659": {
+"name": "Tencent (China)",
+"cc": "CN",
+"type": "company"
+},
+"I2277624104": {
+"name": "Fondazione Bruno Kessler",
+"cc": "IT",
+"type": "facility"
+},
+"I2279609970": {
+"name": "Université de Lille",
+"cc": "FR",
+"type": "education"
+},
+"I23946033": {
+"name": "University of Tehran",
+"cc": "IR",
+"type": "education"
+},
+"I24062138": {
+"name": "Konkuk University",
+"cc": "KR",
+"type": "education"
+},
+"I241749": {
+"name": "University of Cambridge",
+"cc": "GB",
+"type": "education"
+},
+"I24185976": {
+"name": "Sichuan University",
+"cc": "CN",
+"type": "education"
+},
+"I24245652": {
+"name": "Mindanao State University – Iligan Institute of Technology",
+"cc": "PH",
+"type": "education"
+},
+"I24456540": {
+"name": "Korea Aerospace University",
+"cc": "KR",
+"type": "education"
+},
+"I24603500": {
+"name": "University of Massachusetts Amherst",
+"cc": "US",
+"type": "education"
+},
+"I24676775": {
+"name": "Indian Institute of Technology Madras",
+"cc": "IN",
+"type": "education"
+},
+"I24943067": {
+"name": "Fudan University",
+"cc": "CN",
+"type": "education"
+},
+"I25217355": {
+"name": "University of Pavia",
+"cc": "IT",
+"type": "education"
+},
+"I25399158": {
+"name": "Mahidol University",
+"cc": "TH",
+"type": "education"
+},
+"I25846049": {
+"name": "National Tsing Hua University",
+"cc": "TW",
+"type": "education"
+},
+"I2738703131": {
+"name": "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
+"cc": "FR",
+"type": "government"
+},
+"I27577105": {
+"name": "University College Cork",
+"cc": "IE",
+"type": "education"
+},
+"I277688954": {
+"name": "Université Paris-Saclay",
+"cc": "FR",
+"type": "education"
+},
+"I27804330": {
+"name": "Brown University",
+"cc": "US",
+"type": "education"
+},
+"I27837315": {
+"name": "University of Michigan",
+"cc": "US",
+"type": "education"
+},
+"I2799611809": {
+"name": "Korea Research Institute of Standards and Science",
+"cc": "KR",
+"type": "facility"
+},
+"I2799978770": {
+"name": "X-Fab (Germany)",
+"cc": "DE",
+"type": "company"
+},
+"I2800102766": {
+"name": "Idaho National Laboratory",
+"cc": "US",
+"type": "facility"
+},
+"I2800204708": {
+"name": "LIP - Laboratory of Instrumentation and Experimental Particle Physics",
+"cc": "PT",
+"type": "facility"
+},
+"I2800372957": {
+"name": "China Electronics Technology Group Corporation",
+"cc": "CN",
+"type": "company"
+},
+"I2800374468": {
+"name": "Tzu Chi Foundation",
+"cc": "TW",
+"type": "nonprofit"
+},
+"I2800747041": {
+"name": "Korea Aerospace Research Institute",
+"cc": "KR",
+"type": "government"
+},
+"I2800795503": {
+"name": "Helmholtz-Zentrum Berlin für Materialien und Energie",
+"cc": "DE",
+"type": "facility"
+},
+"I2800958632": {
+"name": "Institut des Nanotechnologies de Lyon",
+"cc": "FR",
+"type": "facility"
+},
+"I2801036362": {
+"name": "Agency for Defense Development",
+"cc": "KR",
+"type": "government"
+},
+"I2801109035": {
+"name": "ARM (United Kingdom)",
+"cc": "GB",
+"type": "company"
+},
+"I2801345734": {
+"name": "China Academy of Engineering Physics",
+"cc": "CN",
+"type": "facility"
+},
+"I2801919071": {
+"name": "University of Illinois System",
+"cc": "US",
+"type": "education"
+},
+"I2801935854": {
+"name": "SLAC National Accelerator Laboratory",
+"cc": "US",
+"type": "facility"
+},
+"I2801952686": {
+"name": "Erasmus MC",
+"cc": "NL",
+"type": "healthcare"
+},
+"I2802017950": {
+"name": "Vlaams Instituut voor Biotechnologie",
+"cc": "BE",
+"type": "facility"
+},
+"I2802571394": {
+"name": "Korea Institute of Nuclear Safety",
+"cc": "KR",
+"type": "facility"
+},
+"I2802690428": {
+"name": "Shanghai Mental Health Center",
+"cc": "CN",
+"type": "healthcare"
+},
+"I2802751956": {
+"name": "University of the Arts Utrecht",
+"cc": "NL",
+"type": "education"
+},
+"I2802759292": {
+"name": "Franche-Comté Électronique Mécanique Thermique et Optique - Sciences et Technologies",
+"cc": "FR",
+"type": "facility"
+},
+"I2802835388": {
+"name": "Seoul National University Hospital",
+"cc": "KR",
+"type": "healthcare"
+},
+"I2802934949": {
+"name": "Radboud University Medical Center",
+"cc": "NL",
+"type": "funder"
+},
+"I2803209242": {
+"name": "University of California System",
+"cc": "US",
+"type": "education"
+},
+"I28777354": {
+"name": "Sejong University",
+"cc": "KR",
+"type": "education"
+},
+"I3004594783": {
+"name": "Institute of High Performance Computing",
+"cc": "SG",
+"type": "facility"
+},
+"I3005327000": {
+"name": "Institute for Infocomm Research",
+"cc": "SG",
+"type": "facility"
+},
+"I3006985408": {
+"name": "Jožef Stefan Institute",
+"cc": "SI",
+"type": "facility"
+},
+"I3019848993": {
+"name": "Mines Saint-Étienne",
+"cc": "FR",
+"type": "education"
+},
+"I3020098449": {
+"name": "CEA Grenoble",
+"cc": "FR",
+"type": "government"
+},
+"I3045169105": {
+"name": "Southern University of Science and Technology",
+"cc": "CN",
+"type": "education"
+},
+"I30809798": {
+"name": "ShanghaiTech University",
+"cc": "CN",
+"type": "education"
+},
+"I3124704065": {
+"name": "University of Kurdistan",
+"cc": "IR",
+"type": "education"
+},
+"I3133055985": {
+"name": "Westlake University",
+"cc": "CN",
+"type": "education"
+},
+"I31419693": {
+"name": "Kyungpook National University",
+"cc": "KR",
+"type": "education"
+},
+"I3150213": {
+"name": "Intuitive Surgical (Switzerland)",
+"cc": "CH",
+"type": "company"
+},
+"I31512782": {
+"name": "Technische Universität Darmstadt",
+"cc": "DE",
+"type": "education"
+},
+"I31766871": {
+"name": "Sookmyung Women's University",
+"cc": "KR",
+"type": "education"
+},
+"I32597200": {
+"name": "Ghent University",
+"cc": "BE",
+"type": "education"
+},
+"I32923980": {
+"name": "Xilinx (United States)",
+"cc": "US",
+"type": "company"
+},
+"I32971472": {
+"name": "Yale University",
+"cc": "US",
+"type": "education"
+},
+"I33213144": {
+"name": "University of Florida",
+"cc": "US",
+"type": "education"
+},
+"I33849332": {
+"name": "University of Malaya",
+"cc": "MY",
+"type": "education"
+},
+"I340842764": {
+"name": "Foton Motors (China)",
+"cc": "CN",
+"type": "company"
+},
+"I35440088": {
+"name": "ETH Zurich",
+"cc": "CH",
+"type": "education"
+},
+"I35662394": {
+"name": "GlobalFoundries (United States)",
+"cc": "US",
+"type": "company"
+},
+"I35928602": {
+"name": "Kyung Hee University",
+"cc": "KR",
+"type": "education"
+},
+"I35961687": {
+"name": "Universidad de Antioquia",
+"cc": "CO",
+"type": "education"
+},
+"I36234482": {
+"name": "University of Bristol",
+"cc": "GB",
+"type": "education"
+},
+"I36258959": {
+"name": "University of California San Diego",
+"cc": "US",
+"type": "education"
+},
+"I36326968": {
+"name": "InterDigital (United States)",
+"cc": "US",
+"type": "company"
+},
+"I36399199": {
+"name": "Nanjing University of Science and Technology",
+"cc": "CN",
+"type": "education"
+},
+"I37796252": {
+"name": "Beijing University of Technology",
+"cc": "CN",
+"type": "education"
+},
+"I39063666": {
+"name": "University of Catania",
+"cc": "IT",
+"type": "education"
+},
+"I392282": {
+"name": "University at Albany, State University of New York",
+"cc": "US",
+"type": "education"
+},
+"I3923682": {
+"name": "Soochow University",
+"cc": "CN",
+"type": "education"
+},
+"I39534123": {
+"name": "Gwangju Institute of Science and Technology",
+"cc": "KR",
+"type": "education"
+},
+"I39774598": {
+"name": "Hefei University",
+"cc": "CN",
+"type": "education"
+},
+"I39804081": {
+"name": "Sorbonne Université",
+"cc": "FR",
+"type": "education"
+},
+"I40347166": {
+"name": "University of Chicago",
+"cc": "US",
+"type": "education"
+},
+"I40527276": {
+"name": "Universität der Bundeswehr München",
+"cc": "DE",
+"type": "education"
+},
+"I40542001": {
+"name": "University of Ulsan",
+"cc": "KR",
+"type": "education"
+},
+"I4092182": {
+"name": "Graz University of Technology",
+"cc": "AT",
+"type": "education"
+},
+"I41198531": {
+"name": "Nanjing University of Posts and Telecommunications",
+"cc": "CN",
+"type": "education"
+},
+"I4210085861": {
+"name": "Laboratoire d'Intégration des Systèmes et des Technologies",
+"cc": "FR",
+"type": "government"
+},
+"I4210086359": {
+"name": "Murata (France)",
+"cc": "FR",
+"type": "company"
+},
+"I4210086894": {
+"name": "Research Center for Information Technology Innovation, Academia Sinica",
+"cc": "TW",
+"type": "facility"
+},
+"I4210087012": {
+"name": "Techniques of Informatics and Microelectronics for Integrated Systems Architecture",
+"cc": "FR",
+"type": "facility"
+},
+"I4210087059": {
+"name": "Technology Innovation Institute",
+"cc": "AE",
+"type": "facility"
+},
+"I4210087349": {
+"name": "China Resources (China)",
+"cc": "CN",
+"type": "company"
+},
+"I4210087574": {
+"name": "Richtek Technology (Taiwan)",
+"cc": "TW",
+"type": "company"
+},
+"I4210087915": {
+"name": "Massachusetts General Hospital",
+"cc": "US",
+"type": "healthcare"
+},
+"I4210088328": {
+"name": "Third Hospital of Hebei Medical University",
+"cc": "CN",
+"type": "healthcare"
+},
+"I4210088602": {
+"name": "TCI (Taiwan)",
+"cc": "TW",
+"type": "company"
+},
+"I4210089056": {
+"name": "Beijing Microelectronics Technology Institute",
+"cc": "CN",
+"type": "other"
+},
+"I4210089357": {
+"name": "Hitachi (United Kingdom)",
+"cc": "GB",
+"type": "company"
+},
+"I4210089761": {
+"name": "West China Hospital of Sichuan University",
+"cc": "CN",
+"type": "healthcare"
+},
+"I4210090068": {
+"name": "Fraunhofer Institute for Applied Solid State Physics",
+"cc": "DE",
+"type": "facility"
+},
+"I4210090209": {
+"name": "Institute of Microelectronics",
+"cc": "SG",
+"type": "facility"
+},
+"I4210090867": {
+"name": "Fraunhofer Institute for High Frequency Physics and Radar Techniques",
+"cc": "DE",
+"type": "facility"
+},
+"I4210090869": {
+"name": "Ferric (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210090971": {
+"name": "Southeast University",
+"cc": "BD",
+"type": "education"
+},
+"I4210091061": {
+"name": "George Eliava Institute of Bacteriophage, Microbiology and Virology",
+"cc": "GE",
+"type": "facility"
+},
+"I4210091133": {
+"name": "Daegu Catholic University Medical Center",
+"cc": "KR",
+"type": "healthcare"
+},
+"I4210091409": {
+"name": "Institut de Recherche Interdisciplinaire de Grenoble",
+"cc": "FR",
+"type": "government"
+},
+"I4210092175": {
+"name": "ASML (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210092191": {
+"name": "Macronix International (Taiwan)",
+"cc": "TW",
+"type": "company"
+},
+"I4210092299": {
+"name": "Qihoo 360 (China)",
+"cc": "CN",
+"type": "company"
+},
+"I4210092504": {
+"name": "ASM International (Netherlands)",
+"cc": "NL",
+"type": "company"
+},
+"I4210092701": {
+"name": "Quantum Motion Technologies (United Kingdom)",
+"cc": "GB",
+"type": "company"
+},
+"I4210093216": {
+"name": "Institut Català de Nanociència i Nanotecnologia",
+"cc": "ES",
+"type": "facility"
+},
+"I4210093228": {
+"name": "Microchip Technology (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210093936": {
+"name": "Centre de physique des particules de Marseille",
+"cc": "FR",
+"type": "facility"
+},
+"I4210094759": {
+"name": "Fujitsu (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210094794": {
+"name": "Melexis (Belgium)",
+"cc": "BE",
+"type": "company"
+},
+"I4210094826": {
+"name": "OmniVision Technologies (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210096271": {
+"name": "And Technology Research (United Kingdom)",
+"cc": "GB",
+"type": "company"
+},
+"I4210097074": {
+"name": "Theiss Research",
+"cc": "US",
+"type": "nonprofit"
+},
+"I4210098034": {
+"name": "Key Laboratory of Guangdong Province",
+"cc": "CN",
+"type": "facility"
+},
+"I4210098366": {
+"name": "Institute of Information Science, Academia Sinica",
+"cc": "TW",
+"type": "facility"
+},
+"I4210098582": {
+"name": "ZTE (China)",
+"cc": "CN",
+"type": "company"
+},
+"I4210098888": {
+"name": "PragmatIC (United Kingdom)",
+"cc": "GB",
+"type": "company"
+},
+"I4210099074": {
+"name": "Evidation Health (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210100562": {
+"name": "Centre de Nanosciences et de Nanotechnologies",
+"cc": "FR",
+"type": "facility"
+},
+"I4210100844": {
+"name": "Laboratoire des Matériaux et du Génie Physique",
+"cc": "FR",
+"type": "facility"
+},
+"I4210101362": {
+"name": "Xilinx (Ireland)",
+"cc": "IE",
+"type": "company"
+},
+"I4210102431": {
+"name": "POET Technologies (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210102879": {
+"name": "Applied Materials (Singapore)",
+"cc": "SG",
+"type": "company"
+},
+"I4210103346": {
+"name": "Nanfang Hospital",
+"cc": "CN",
+"type": "healthcare"
+},
+"I4210103536": {
+"name": "Vertically Integrated Systems (Germany)",
+"cc": "DE",
+"type": "company"
+},
+"I4210104545": {
+"name": "Instituto de Microelectrónica de Sevilla",
+"cc": "ES",
+"type": "facility"
+},
+"I4210104735": {
+"name": "Sandia National Laboratories",
+"cc": "US",
+"type": "facility"
+},
+"I4210104751": {
+"name": "Bronkhorst (Netherlands)",
+"cc": "NL",
+"type": "company"
+},
+"I4210105647": {
+"name": "Inston (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210107475": {
+"name": "CUNY Advanced Science Research Center",
+"cc": "US",
+"type": "education"
+},
+"I4210107525": {
+"name": "National Center for High-Performance Computing",
+"cc": "TW",
+"type": "facility"
+},
+"I4210108341": {
+"name": "Korea Institute of Materials Science",
+"cc": "KR",
+"type": "education"
+},
+"I4210109380": {
+"name": "Tesla (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210110247": {
+"name": "Fraunhofer Institute for Photonic Microsystems",
+"cc": "DE",
+"type": "facility"
+},
+"I4210111328": {
+"name": "Novatek Microelectronics (Taiwan)",
+"cc": "TW",
+"type": "company"
+},
+"I4210112016": {
+"name": "Institut des Matériaux, de Microélectronique et des Nanosciences de Provence",
+"cc": "FR",
+"type": "facility"
+},
+"I4210113131": {
+"name": "Barkhausen Institut",
+"cc": "DE",
+"type": "facility"
+},
+"I4210113529": {
+"name": "Jožef Stefan International Postgraduate School",
+"cc": "SI",
+"type": "education"
+},
+"I4210113675": {
+"name": "Center for Integrated Quantum Science and Technology",
+"cc": "DE",
+"type": "facility"
+},
+"I4210114190": {
+"name": "Shanghai Zhangjiang Laboratory",
+"cc": "CN",
+"type": "facility"
+},
+"I4210114445": {
+"name": "Michigan Medicine",
+"cc": "US",
+"type": "healthcare"
+},
+"I4210114577": {
+"name": "Korea Food Research Institute",
+"cc": "KR",
+"type": "facility"
+},
+"I4210114974": {
+"name": "IMEC",
+"cc": "BE",
+"type": "nonprofit"
+},
+"I4210115047": {
+"name": "Novelda (Norway)",
+"cc": "NO",
+"type": "company"
+},
+"I4210115644": {
+"name": "Chinese Institute for Brain Research",
+"cc": "CN",
+"type": "government"
+},
+"I4210115805": {
+"name": "Keysight Technologies (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210116330": {
+"name": "JUNIA",
+"cc": "FR",
+"type": "education"
+},
+"I4210116333": {
+"name": "Phison (Taiwan)",
+"cc": "TW",
+"type": "company"
+},
+"I4210116924": {
+"name": "Chinese University of Hong Kong, Shenzhen",
+"cc": "CN",
+"type": "education"
+},
+"I4210117556": {
+"name": "Inphi (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210118945": {
+"name": "MPS España",
+"cc": "ES",
+"type": "nonprofit"
+},
+"I4210119056": {
+"name": "Fondazione Politecnico di Milano",
+"cc": "IT",
+"type": "facility"
+},
+"I4210119058": {
+"name": "National Institute for Research and Development in Microtechnologies",
+"cc": "RO",
+"type": "facility"
+},
+"I4210119340": {
+"name": "Providence Park Hospital",
+"cc": "US",
+"type": "healthcare"
+},
+"I4210119362": {
+"name": "Hahn-Schickard-Gesellschaft für angewandte Forschung",
+"cc": "DE",
+"type": "nonprofit"
+},
+"I4210119464": {
+"name": "Quality and Reliability (Greece)",
+"cc": "GR",
+"type": "company"
+},
+"I4210121266": {
+"name": "Technicolor (France)",
+"cc": "FR",
+"type": "company"
+},
+"I4210121671": {
+"name": "EV Group (Austria)",
+"cc": "AT",
+"type": "company"
+},
+"I4210121800": {
+"name": "Chan Zuckerberg Initiative (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210122178": {
+"name": "Hewlett Packard Enterprise (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210122489": {
+"name": "NaMLab (Germany)",
+"cc": "DE",
+"type": "company"
+},
+"I4210122954": {
+"name": "MIT Lincoln Laboratory",
+"cc": "US",
+"type": "facility"
+},
+"I4210123095": {
+"name": "Institute of Materials Research and Engineering",
+"cc": "SG",
+"type": "facility"
+},
+"I4210123126": {
+"name": "Silicon Austria Labs (Austria)",
+"cc": "AT",
+"type": "company"
+},
+"I4210123185": {
+"name": "Zhejiang Lab",
+"cc": "CN",
+"type": "facility"
+},
+"I4210123216": {
+"name": "Ruđer Bošković Institute",
+"cc": "HR",
+"type": "facility"
+},
+"I4210123471": {
+"name": "Institut d'Electronique, de Microélectronique et de Nanotechnologie",
+"cc": "FR",
+"type": "facility"
+},
+"I4210124172": {
+"name": "Solid (South Korea)",
+"cc": "KR",
+"type": "company"
+},
+"I4210124274": {
+"name": "Fraunhofer Institute for Integrated Circuits",
+"cc": "DE",
+"type": "facility"
+},
+"I4210124613": {
+"name": "Inphi (United Kingdom)",
+"cc": "GB",
+"type": "company"
+},
+"I4210124779": {
+"name": "National Aeronautics and Space Administration",
+"cc": "US",
+"type": "government"
+},
+"I4210125489": {
+"name": "Synaptics (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210126026": {
+"name": "Anhui East China Institute of Optoelectronic Technology (China)",
+"cc": "CN",
+"type": "company"
+},
+"I4210126946": {
+"name": "Qorvo (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210127031": {
+"name": "Uninova",
+"cc": "PT",
+"type": "funder"
+},
+"I4210127265": {
+"name": "Micro Photon Devices",
+"cc": "IT",
+"type": "company"
+},
+"I4210127535": {
+"name": "Synaptive (Canada)",
+"cc": "CA",
+"type": "company"
+},
+"I4210127702": {
+"name": "Teledyne Technologies (Canada)",
+"cc": "CA",
+"type": "company"
+},
+"I4210128143": {
+"name": "Fraunhofer Research Institution for Microsystems and Solid State Technologies",
+"cc": "DE",
+"type": "facility"
+},
+"I4210128684": {
+"name": "Laboratoire des Technologies de la Microélectronique",
+"cc": "FR",
+"type": "facility"
+},
+"I4210129657": {
+"name": "Delta Electronics (Taiwan)",
+"cc": "TW",
+"type": "company"
+},
+"I4210130112": {
+"name": "China Academy of Information and Communications Technology",
+"cc": "CN",
+"type": "facility"
+},
+"I4210131142": {
+"name": "Swiss Re (Switzerland)",
+"cc": "CH",
+"type": "company"
+},
+"I4210131650": {
+"name": "Korea Electronics Technology Institute",
+"cc": "KR",
+"type": "facility"
+},
+"I4210132699": {
+"name": "ASM International (Belgium)",
+"cc": "BE",
+"type": "company"
+},
+"I4210133187": {
+"name": "Dolphin Design (France)",
+"cc": "FR",
+"type": "company"
+},
+"I4210133362": {
+"name": "Institut National de Physique Nucléaire et de Physique des Particules",
+"cc": "FR",
+"type": "facility"
+},
+"I4210133912": {
+"name": "Jülich Aachen Research Alliance",
+"cc": "DE",
+"type": "facility"
+},
+"I4210134425": {
+"name": "Fraunhofer Institute for Reliability and Microintegration",
+"cc": "DE",
+"type": "facility"
+},
+"I4210135175": {
+"name": "Hefei Institute of Technology Innovation",
+"cc": "CN",
+"type": "facility"
+},
+"I4210135251": {
+"name": "Spintronique et Technologie des Composants",
+"cc": "FR",
+"type": "facility"
+},
+"I4210135459": {
+"name": "United Imaging Healthcare (China)",
+"cc": "CN",
+"type": "company"
+},
+"I4210136390": {
+"name": "Alphacore (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210136567": {
+"name": "GlobalFoundries (Singapore)",
+"cc": "SG",
+"type": "company"
+},
+"I4210136779": {
+"name": "Istituto Nazionale di Fisica Nucleare, Sezione di Milano",
+"cc": "IT",
+"type": "facility"
+},
+"I4210136793": {
+"name": "Peng Cheng Laboratory",
+"cc": "CN",
+"type": "facility"
+},
+"I4210137199": {
+"name": "Aerospace Information Research Institute",
+"cc": "CN",
+"type": "education"
+},
+"I4210137542": {
+"name": "Graphenea (Spain)",
+"cc": "ES",
+"type": "company"
+},
+"I4210138066": {
+"name": "Insilixa (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210138186": {
+"name": "Wuhan National Laboratory for Optoelectronics",
+"cc": "CN",
+"type": "facility"
+},
+"I4210138743": {
+"name": "Siemens (France)",
+"cc": "FR",
+"type": "company"
+},
+"I4210138881": {
+"name": "Ayar Labs (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210139090": {
+"name": "Lam Research (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210139321": {
+"name": "Graphcore (United Kingdom)",
+"cc": "GB",
+"type": "company"
+},
+"I4210139715": {
+"name": "Institut de Microélectronique, Electromagnétisme et Photonique",
+"cc": "FR",
+"type": "facility"
+},
+"I4210139880": {
+"name": "Protestant University of Applied Sciences Freiburg",
+"cc": "DE",
+"type": "education"
+},
+"I4210139925": {
+"name": "Korea Basic Science Institute",
+"cc": "KR",
+"type": "facility"
+},
+"I4210140478": {
+"name": "SpaceX (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210140519": {
+"name": "Korean Association Of Science and Technology Studies",
+"cc": "KR",
+"type": "other"
+},
+"I4210140564": {
+"name": "Istituto Nazionale di Fisica Nucleare, Sezione di Milano Bicocca",
+"cc": "IT",
+"type": "facility"
+},
+"I4210140705": {
+"name": "Cisco Systems (Israel)",
+"cc": "IL",
+"type": "company"
+},
+"I4210140930": {
+"name": "Thales (France)",
+"cc": "FR",
+"type": "company"
+},
+"I4210141319": {
+"name": "International Iberian Nanotechnology Laboratory",
+"cc": "PT",
+"type": "facility"
+},
+"I4210142027": {
+"name": "GlobalFoundries (Germany)",
+"cc": "DE",
+"type": "company"
+},
+"I4210142175": {
+"name": "Sekisui XenoTech (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210142472": {
+"name": "Neuroelectronics Research Flanders",
+"cc": "BE",
+"type": "facility"
+},
+"I4210142477": {
+"name": "OmniVision Technologies (China)",
+"cc": "CN",
+"type": "company"
+},
+"I4210142504": {
+"name": "Semiconductor Manufacturing International (China)",
+"cc": "CN",
+"type": "company"
+},
+"I4210142660": {
+"name": "Istituto Nazionale di Fisica Nucleare, Laboratori Nazionali di Frascati",
+"cc": "IT",
+"type": "facility"
+},
+"I4210143882": {
+"name": "Cheongam College",
+"cc": "KR",
+"type": "education"
+},
+"I4210144791": {
+"name": "Institut Néel",
+"cc": "FR",
+"type": "facility"
+},
+"I4210144839": {
+"name": "Hamad bin Khalifa University",
+"cc": "QA",
+"type": "education"
+},
+"I4210145102": {
+"name": "Institut Polytechnique de Paris",
+"cc": "FR",
+"type": "education"
+},
+"I4210145166": {
+"name": "Foundry (United Kingdom)",
+"cc": "GB",
+"type": "company"
+},
+"I4210145640": {
+"name": "QuTech",
+"cc": "NL",
+"type": "facility"
+},
+"I4210146965": {
+"name": "Baker Hughes (Germany)",
+"cc": "DE",
+"type": "company"
+},
+"I4210148064": {
+"name": "Osypka (Germany)",
+"cc": "DE",
+"type": "company"
+},
+"I4210148388": {
+"name": "Xi'an UniIC Semiconductors (China)",
+"cc": "CN",
+"type": "company"
+},
+"I4210148468": {
+"name": "Industrial Technology Research Institute",
+"cc": "TW",
+"type": "nonprofit"
+},
+"I4210148926": {
+"name": "Powerchip (Taiwan)",
+"cc": "TW",
+"type": "company"
+},
+"I4210149869": {
+"name": "Quality Systems (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210150049": {
+"name": "Laboratoire d'Électronique des Technologies de l'Information",
+"cc": "FR",
+"type": "government"
+},
+"I4210150617": {
+"name": "Hitachi (Canada)",
+"cc": "CA",
+"type": "company"
+},
+"I4210150858": {
+"name": "Beijing Academy of Quantum Information Sciences",
+"cc": "CN",
+"type": "facility"
+},
+"I4210152249": {
+"name": "ASM International (Finland)",
+"cc": "FI",
+"type": "company"
+},
+"I4210152374": {
+"name": "Teledyne Technologies (France)",
+"cc": "FR",
+"type": "company"
+},
+"I4210153550": {
+"name": "Beijing Tsinghua Chang Gung Hospital",
+"cc": "CN",
+"type": "healthcare"
+},
+"I4210153656": {
+"name": "Holst Centre (Netherlands)",
+"cc": "NL",
+"type": "company"
+},
+"I4210154473": {
+"name": "NHanced Semiconductors (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210155232": {
+"name": "Fiberhome Technology Group (China)",
+"cc": "CN",
+"type": "company"
+},
+"I4210155236": {
+"name": "National Research Council",
+"cc": "IT",
+"type": "nonprofit"
+},
+"I4210155350": {
+"name": "Purple Mountain Laboratories",
+"cc": "CN",
+"type": "facility"
+},
+"I4210157089": {
+"name": "Laboratoire de l'Intégration du Matériau au Système",
+"cc": "FR",
+"type": "facility"
+},
+"I4210157275": {
+"name": "North China Research Institute of Electro-optics",
+"cc": "CN",
+"type": "facility"
+},
+"I4210157704": {
+"name": "Korea Advanced Nano Fab Center",
+"cc": "KR",
+"type": "other"
+},
+"I4210158242": {
+"name": "TriLink BioTechnologies (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210158999": {
+"name": "National Cheng Kung University Hospital",
+"cc": "TW",
+"type": "healthcare"
+},
+"I4210159731": {
+"name": "LIP6",
+"cc": "FR",
+"type": "facility"
+},
+"I4210160189": {
+"name": "Institut Polytechnique de Bordeaux",
+"cc": "FR",
+"type": "education"
+},
+"I4210160469": {
+"name": "Ciena (Canada)",
+"cc": "CA",
+"type": "company"
+},
+"I4210161460": {
+"name": "OpenAI (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210162115": {
+"name": "Silvaco (United Kingdom)",
+"cc": "GB",
+"type": "company"
+},
+"I4210162339": {
+"name": "Nordic Semiconductor (Norway)",
+"cc": "NO",
+"type": "company"
+},
+"I4210162521": {
+"name": "CreoNex Systems (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210163537": {
+"name": "L3Harris (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210164948": {
+"name": "Institut für Mikroelektronik Stuttgart",
+"cc": "DE",
+"type": "nonprofit"
+},
+"I4210165038": {
+"name": "University of Chinese Academy of Sciences",
+"cc": "CN",
+"type": "education"
+},
+"I4210166075": {
+"name": "Silvus Technologies (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210166580": {
+"name": "Analog Photonics (United States)",
+"cc": "US",
+"type": "company"
+},
+"I4210166867": {
+"name": "National Institutes of Applied Research",
+"cc": "TW",
+"type": "government"
+},
+"I4322889": {
+"name": "Mahanakorn University of Technology",
+"cc": "TH",
+"type": "education"
+},
+"I43439940": {
+"name": "University of Southampton",
+"cc": "GB",
+"type": "education"
+},
+"I4387152242": {
+"name": "Institute for Materials Research, Tohoku University",
+"cc": "",
+"type": "facility"
+},
+"I4387152517": {
+"name": "Instituto Superior Técnico",
+"cc": "PT",
+"type": "education"
+},
+"I4387152969": {
+"name": "Bundeswehr",
+"cc": "",
+"type": "government"
+},
+"I4387153010": {
+"name": "Télécom SudParis",
+"cc": "FR",
+"type": "education"
+},
+"I4387153864": {
+"name": "Tokai University Tokyo Hospital",
+"cc": "",
+"type": "healthcare"
+},
+"I4387154311": {
+"name": "Swiss Nanoscience Institute",
+"cc": "",
+"type": "facility"
+},
+"I4387154962": {
+"name": "1QBit",
+"cc": "",
+"type": "company"
+},
+"I4387155352": {
+"name": "Laboratoire Nanotechnologies et Nanosystèmes",
+"cc": "CA",
+"type": "facility"
+},
+"I4387156398": {
+"name": "RIKEN Center for Quantum Computing",
+"cc": "",
+"type": "facility"
+},
+"I4388446357": {
+"name": "KITE Research Institute",
+"cc": "",
+"type": "facility"
+},
+"I4388482671": {
+"name": "Rome Laboratory",
+"cc": "",
+"type": "facility"
+},
+"I4388482740": {
+"name": "Georgia Tech Research Institute",
+"cc": "",
+"type": "facility"
+},
+"I4388891764": {
+"name": "Raytheon (United States)",
+"cc": "",
+"type": "company"
+},
+"I4390039273": {
+"name": "Ottawa Research and Development Centre",
+"cc": "",
+"type": "facility"
+},
+"I4390039327": {
+"name": "Faculty of Electrical Engineering and Computing in Zagreb",
+"cc": "HR",
+"type": "education"
+},
+"I4391012619": {
+"name": "Shanghai Artificial Intelligence Laboratory",
+"cc": "CN",
+"type": "facility"
+},
+"I4391767659": {
+"name": "State Key Laboratory of Electronic Thin Films and Integrated Devices",
+"cc": "",
+"type": "facility"
+},
+"I4391767673": {
+"name": "State Key Laboratory of ASIC and System",
+"cc": "",
+"type": "facility"
+},
+"I4391767789": {
+"name": "State Key Laboratory of Silicon Materials",
+"cc": "",
+"type": "facility"
+},
+"I4391767819": {
+"name": "State Key Laboratory of Low-Dimensional Quantum Physics",
+"cc": "",
+"type": "facility"
+},
+"I4391768004": {
+"name": "National Laboratory of Solid State Microstructures",
+"cc": "",
+"type": "facility"
+},
+"I4391768253": {
+"name": "State Key Laboratory of Millimeter Waves",
+"cc": "",
+"type": "facility"
+},
+"I4392738099": {
+"name": "Stanford SystemX Alliance",
+"cc": "",
+"type": "facility"
+},
+"I4392738244": {
+"name": "PQShield (United Kingdom)",
+"cc": "",
+"type": "company"
+},
+"I4400008976": {
+"name": "Allegro (Poland)",
+"cc": "",
+"type": "company"
+},
+"I4400573202": {
+"name": "Centre de Radiofréquences, Optique et Micro-nanoélectronique des Alpes",
+"cc": "FR",
+"type": "facility"
+},
+"I4401726801": {
+"name": "Monolithic Power Systems (United States)",
+"cc": "",
+"type": "company"
+},
+"I4401726927": {
+"name": "Cerebras Systems (United States)",
+"cc": "",
+"type": "company"
+},
+"I4403386725": {
+"name": "Suzhou City University",
+"cc": "",
+"type": "education"
+},
+"I4405253306": {
+"name": "Information Processing and Telecommunications Center",
+"cc": "ES",
+"type": "facility"
+},
+"I4405253839": {
+"name": "Institute of Environmental Engineering",
+"cc": "CH",
+"type": "facility"
+},
+"I4405253860": {
+"name": "Integrated Systems Laboratory",
+"cc": "CH",
+"type": "facility"
+},
+"I4405256566": {
+"name": "Institute of Neuroinformatics",
+"cc": "CH",
+"type": "facility"
+},
+"I4405256866": {
+"name": "ByteDance (China)",
+"cc": "CN",
+"type": "company"
+},
+"I4405256935": {
+"name": "Zhangjiang Laboratory",
+"cc": "CN",
+"type": "facility"
+},
+"I4405258423": {
+"name": "Moving Magnet Technologies (France)",
+"cc": "FR",
+"type": "company"
+},
+"I4405258752": {
+"name": "Korea University Guro Hospital",
+"cc": "KR",
+"type": "healthcare"
+},
+"I4405258862": {
+"name": "Université de Toulouse",
+"cc": "FR",
+"type": "education"
+},
+"I4405259434": {
+"name": "Guangdong Institute of Intelligence Science and Technology",
+"cc": "CN",
+"type": "education"
+},
+"I4405261073": {
+"name": "Cornell Tech",
+"cc": "US",
+"type": "education"
+},
+"I4405261251": {
+"name": "The Hong Kong University of Science and Technology (Guangzhou)",
+"cc": "CN",
+"type": "education"
+},
+"I4405261323": {
+"name": "Research Institute of Tsinghua University in Shenzhen",
+"cc": "CN",
+"type": "education"
+},
+"I4405261609": {
+"name": "Yongjiang Laboratory",
+"cc": "CN",
+"type": "facility"
+},
+"I4405261856": {
+"name": "Korea University Ansan Hospital",
+"cc": "KR",
+"type": "healthcare"
+},
+"I4405263052": {
+"name": "Tsinghua Shenzhen International Graduate School",
+"cc": "CN",
+"type": "education"
+},
+"I4405265088": {
+"name": "Institut interdisciplinaire d'innovation technologique",
+"cc": "CA",
+"type": "facility"
+},
+"I4405267400": {
+"name": "Centre for Tactile Internet with Human-in-the-Loop",
+"cc": "DE",
+"type": "facility"
+},
+"I4405269125": {
+"name": "Center Nanoelectronic Technologies",
+"cc": "DE",
+"type": "facility"
+},
+"I4405270085": {
+"name": "National Key Laboratory of Science and Technology on Micro/Nano Fabrication",
+"cc": "CN",
+"type": "facility"
+},
+"I4405270328": {
+"name": "Ant Group (China)",
+"cc": "CN",
+"type": "company"
+},
+"I4405271667": {
+"name": "Beijing National Research Center for Information Science and Technology",
+"cc": "CN",
+"type": "facility"
+},
+"I4405272711": {
+"name": "Changping Laboratory",
+"cc": "CN",
+"type": "facility"
+},
+"I4405273108": {
+"name": "AltaLink (Canada)",
+"cc": "CA",
+"type": "company"
+},
+"I4405273159": {
+"name": "CAS Key Laboratory of Quantum Information, USTC",
+"cc": "CN",
+"type": "facility"
+},
+"I4405273316": {
+"name": "Frontiers Center for Brain Science of the Ministry of Education",
+"cc": "CN",
+"type": "facility"
+},
+"I4405275017": {
+"name": "Shenzhen International Quantum Academy",
+"cc": "CN",
+"type": "facility"
+},
+"I4405277036": {
+"name": "FBK Center for Sensors & Devices",
+"cc": "IT",
+"type": "facility"
+},
+"I4405277206": {
+"name": "Centre for Integrated Circuits and Systems",
+"cc": "SG",
+"type": "facility"
+},
+"I4405277486": {
+"name": "Trường Đại học Khoa học và Công nghệ Hà Nội",
+"cc": "VN",
+"type": "education"
+},
+"I4405278082": {
+"name": "DigiPen Institute of Technology Singapore",
+"cc": "SG",
+"type": "education"
+},
+"I4405280064": {
+"name": "Guangzhou Institute of Technology",
+"cc": "CN",
+"type": "education"
+},
+"I4405280116": {
+"name": "Zernike Institute for Advanced Materials",
+"cc": "NL",
+"type": "facility"
+},
+"I4405282275": {
+"name": "Shanghai Xingjian College",
+"cc": "CN",
+"type": "education"
+},
+"I4405282297": {
+"name": "National Center for Instrumentation Research",
+"cc": "TW",
+"type": "facility"
+},
+"I4405392": {
+"name": "Boğaziçi University",
+"cc": "TR",
+"type": "education"
+},
+"I44461941": {
+"name": "University of Houston",
+"cc": "US",
+"type": "education"
+},
+"I44896327": {
+"name": "Mitre (United States)",
+"cc": "US",
+"type": "company"
+},
+"I45084792": {
+"name": "University of Florence",
+"cc": "IT",
+"type": "education"
+},
+"I45129253": {
+"name": "University College London",
+"cc": "GB",
+"type": "education"
+},
+"I45155027": {
+"name": "Technische Hochschule Mittelhessen",
+"cc": "DE",
+"type": "education"
+},
+"I45204951": {
+"name": "University of Calabria",
+"cc": "IT",
+"type": "education"
+},
+"I4575257": {
+"name": "Hanyang University",
+"cc": "KR",
+"type": "education"
+},
+"I4577782": {
+"name": "Technische Universität Berlin",
+"cc": "DE",
+"type": "education"
+},
+"I45928872": {
+"name": "Alibaba Group (China)",
+"cc": "CN",
+"type": "company"
+},
+"I47508984": {
+"name": "Imperial College London",
+"cc": "GB",
+"type": "education"
+},
+"I47720641": {
+"name": "Huazhong University of Science and Technology",
+"cc": "CN",
+"type": "education"
+},
+"I4800084": {
+"name": "Southwest Jiaotong University",
+"cc": "CN",
+"type": "education"
+},
+"I48379061": {
+"name": "Shahid Beheshti University",
+"cc": "IR",
+"type": "education"
+},
+"I48430043": {
+"name": "Institut National des Sciences Appliquées de Lyon",
+"cc": "FR",
+"type": "education"
+},
+"I48566637": {
+"name": "Ulsan National Institute of Science and Technology",
+"cc": "KR",
+"type": "education"
+},
+"I4921948": {
+"name": "Pusan National University",
+"cc": "KR",
+"type": "education"
+},
+"I5023651": {
+"name": "McGill University",
+"cc": "CA",
+"type": "education"
+},
+"I50357001": {
+"name": "Universidad Carlos III de Madrid",
+"cc": "ES",
+"type": "education"
+},
+"I50758014": {
+"name": "Daegu Future College",
+"cc": "KR",
+"type": "education"
+},
+"I50760025": {
+"name": "Hangzhou Dianzi University",
+"cc": "CN",
+"type": "education"
+},
+"I5124864": {
+"name": "École Polytechnique Fédérale de Lausanne",
+"cc": "CH",
+"type": "education"
+},
+"I51504820": {
+"name": "San Jose State University",
+"cc": "US",
+"type": "education"
+},
+"I51556381": {
+"name": "University of Virginia",
+"cc": "US",
+"type": "education"
+},
+"I52158045": {
+"name": "China Agricultural University",
+"cc": "CN",
+"type": "education"
+},
+"I52357470": {
+"name": "The Ohio State University",
+"cc": "US",
+"type": "education"
+},
+"I5388228": {
+"name": "University of Rochester",
+"cc": "US",
+"type": "education"
+},
+"I53964585": {
+"name": "Weizmann Institute of Science",
+"cc": "IL",
+"type": "education"
+},
+"I55513165": {
+"name": "Tyndall National Institute",
+"cc": "IE",
+"type": "facility"
+},
+"I55538621": {
+"name": "China Jiliang University",
+"cc": "CN",
+"type": "education"
+},
+"I55732556": {
+"name": "Arizona State University",
+"cc": "US",
+"type": "education"
+},
+"I55741626": {
+"name": "Technical University of Crete",
+"cc": "GR",
+"type": "education"
+},
+"I57206974": {
+"name": "New York University",
+"cc": "US",
+"type": "education"
+},
+"I57664883": {
+"name": "Ajou University",
+"cc": "KR",
+"type": "education"
+},
+"I58200834": {
+"name": "Southern Medical University",
+"cc": "CN",
+"type": "education"
+},
+"I58716616": {
+"name": "Korea Institute of Science and Technology",
+"cc": "KR",
+"type": "facility"
+},
+"I58956616": {
+"name": "Case Western Reserve University",
+"cc": "US",
+"type": "education"
+},
+"I59270414": {
+"name": "Indian Institute of Science Bangalore",
+"cc": "IN",
+"type": "education"
+},
+"I59692284": {
+"name": "École d'Ingénieurs en Chimie et Sciences du Numérique",
+"cc": "FR",
+"type": "education"
+},
+"I60488453": {
+"name": "Middlesex University London",
+"cc": "GB",
+"type": "education"
+},
+"I60922564": {
+"name": "Naver (South Korea)",
+"cc": "KR",
+"type": "company"
+},
+"I61641377": {
+"name": "Universitatea Națională de Știință și Tehnologie Politehnica București",
+"cc": "RO",
+"type": "education"
+},
+"I62916508": {
+"name": "Technical University of Munich",
+"cc": "DE",
+"type": "education"
+},
+"I63190737": {
+"name": "University at Buffalo, State University of New York",
+"cc": "US",
+"type": "education"
+},
+"I63966007": {
+"name": "Massachusetts Institute of Technology",
+"cc": "US",
+"type": "education"
+},
+"I65181880": {
+"name": "Indian Institute of Technology Hyderabad",
+"cc": "IN",
+"type": "education"
+},
+"I66752286": {
+"name": "University of Milano-Bicocca",
+"cc": "IT",
+"type": "education"
+},
+"I66862912": {
+"name": "Chalmers University of Technology",
+"cc": "SE",
+"type": "education"
+},
+"I66867065": {
+"name": "East China Normal University",
+"cc": "CN",
+"type": "education"
+},
+"I66958751": {
+"name": "Woods Hole Oceanographic Institution",
+"cc": "US",
+"type": "funder"
+},
+"I67031392": {
+"name": "Carleton University",
+"cc": "CA",
+"type": "education"
+},
+"I67900169": {
+"name": "Chung-Ang University",
+"cc": "KR",
+"type": "education"
+},
+"I68618741": {
+"name": "Polytechnic University of Bari",
+"cc": "IT",
+"type": "education"
+},
+"I68891433": {
+"name": "Indian Institute of Technology Delhi",
+"cc": "IN",
+"type": "education"
+},
+"I68947357": {
+"name": "Université de Strasbourg",
+"cc": "FR",
+"type": "education"
+},
+"I70348806": {
+"name": "Université Polytechnique Hauts-de-France",
+"cc": "FR",
+"type": "education"
+},
+"I70886390": {
+"name": "Karlsruhe University of Applied Sciences",
+"cc": "DE",
+"type": "education"
+},
+"I70900168": {
+"name": "Université Savoie Mont Blanc",
+"cc": "FR",
+"type": "education"
+},
+"I71824836": {
+"name": "Swiss Federal Laboratories for Materials Science and Technology",
+"cc": "CH",
+"type": "facility"
+},
+"I72951846": {
+"name": "Washington State University",
+"cc": "US",
+"type": "education"
+},
+"I74316835": {
+"name": "Vodafone (United Kingdom)",
+"cc": "GB",
+"type": "company"
+},
+"I74525822": {
+"name": "Hubei University of Technology",
+"cc": "CN",
+"type": "education"
+},
+"I7454413": {
+"name": "Centrale Lille Institut",
+"cc": "FR",
+"type": "education"
+},
+"I74775410": {
+"name": "Rice University",
+"cc": "US",
+"type": "education"
+},
+"I74973139": {
+"name": "Carnegie Mellon University",
+"cc": "US",
+"type": "education"
+},
+"I75028090": {
+"name": "Fair Isaac Corporation (United States)",
+"cc": "US",
+"type": "company"
+},
+"I75636454": {
+"name": "Renesas Electronics (United States)",
+"cc": "US",
+"type": "company"
+},
+"I75867142": {
+"name": "Xiamen University of Technology",
+"cc": "CN",
+"type": "education"
+},
+"I75900474": {
+"name": "Hubei University",
+"cc": "CN",
+"type": "education"
+},
+"I76130692": {
+"name": "Zhejiang University",
+"cc": "CN",
+"type": "education"
+},
+"I76198965": {
+"name": "Friedrich Schiller University Jena",
+"cc": "DE",
+"type": "education"
+},
+"I76569877": {
+"name": "Southeast University",
+"cc": "CN",
+"type": "education"
+},
+"I76835614": {
+"name": "University of Missouri",
+"cc": "US",
+"type": "education"
+},
+"I77079311": {
+"name": "Wonkwang University",
+"cc": "KR",
+"type": "education"
+},
+"I78577930": {
+"name": "Columbia University",
+"cc": "US",
+"type": "education"
+},
+"I78650965": {
+"name": "Technische Universität Dresden",
+"cc": "DE",
+"type": "education"
+},
+"I78675632": {
+"name": "Beijing Information Science & Technology University",
+"cc": "CN",
+"type": "education"
+},
+"I7882870": {
+"name": "University of Glasgow",
+"cc": "GB",
+"type": "education"
+},
+"I79056234": {
+"name": "Gwangju University",
+"cc": "KR",
+"type": "education"
+},
+"I79238269": {
+"name": "Universidad de Sevilla",
+"cc": "ES",
+"type": "education"
+},
+"I79291875": {
+"name": "Taiwan Space Agency",
+"cc": "TW",
+"type": "government"
+},
+"I79576946": {
+"name": "University of Pennsylvania",
+"cc": "US",
+"type": "education"
+},
+"I79940851": {
+"name": "University of Brescia",
+"cc": "IT",
+"type": "education"
+},
+"I80543232": {
+"name": "K. N. Toosi University of Technology",
+"cc": "IR",
+"type": "education"
+},
+"I80611190": {
+"name": "Jeonbuk National University",
+"cc": "KR",
+"type": "education"
+},
+"I8078737": {
+"name": "Clemson University",
+"cc": "US",
+"type": "education"
+},
+"I80947539": {
+"name": "Fuzhou University",
+"cc": "CN",
+"type": "education"
+},
+"I82497590": {
+"name": "Auburn University",
+"cc": "US",
+"type": "education"
+},
+"I82880672": {
+"name": "Beihang University",
+"cc": "CN",
+"type": "education"
+},
+"I83019370": {
+"name": "Eindhoven University of Technology",
+"cc": "NL",
+"type": "education"
+},
+"I83202590": {
+"name": "Jeju National University",
+"cc": "KR",
+"type": "education"
+},
+"I83436808": {
+"name": "Hankuk University of Foreign Studies",
+"cc": "KR",
+"type": "education"
+},
+"I83558840": {
+"name": "Universidade Nova de Lisboa",
+"cc": "PT",
+"type": "education"
+},
+"I83816512": {
+"name": "University of Genoa",
+"cc": "IT",
+"type": "education"
+},
+"I84218800": {
+"name": "University of California, Davis",
+"cc": "US",
+"type": "education"
+},
+"I84653119": {
+"name": "Academia Sinica",
+"cc": "TW",
+"type": "facility"
+},
+"I848706": {
+"name": "Sungkyunkwan University",
+"cc": "KR",
+"type": "education"
+},
+"I84884186": {
+"name": "Newcastle University",
+"cc": "GB",
+"type": "education"
+},
+"I858936495": {
+"name": "ZHAW Zurich University of Applied Sciences",
+"cc": "CH",
+"type": "education"
+},
+"I859038795": {
+"name": "Virginia Tech",
+"cc": "US",
+"type": "education"
+},
+"I861853513": {
+"name": "Sapienza University of Rome",
+"cc": "IT",
+"type": "education"
+},
+"I862669128": {
+"name": "Xiaomi (China)",
+"cc": "CN",
+"type": "company"
+},
+"I86501945": {
+"name": "University of Delaware",
+"cc": "US",
+"type": "education"
+},
+"I86519309": {
+"name": "The University of Texas at Austin",
+"cc": "US",
+"type": "education"
+},
+"I867280407": {
+"name": "The University of Texas Southwestern Medical Center",
+"cc": "US",
+"type": "healthcare"
+},
+"I86958956": {
+"name": "Ferdowsi University of Mashhad",
+"cc": "IR",
+"type": "education"
+},
+"I87074743": {
+"name": "University of the Philippines Diliman",
+"cc": "PH",
+"type": "education"
+},
+"I87111246": {
+"name": "Catholic University of Korea",
+"cc": "KR",
+"type": "education"
+},
+"I87216513": {
+"name": "Michigan State University",
+"cc": "US",
+"type": "education"
+},
+"I87445476": {
+"name": "Xi'an Jiaotong University",
+"cc": "CN",
+"type": "education"
+},
+"I878454856": {
+"name": "Hasselt University",
+"cc": "BE",
+"type": "education"
+},
+"I88060688": {
+"name": "Universidad Politécnica de Madrid",
+"cc": "ES",
+"type": "education"
+},
+"I880619579": {
+"name": "Teledyne Technologies (United States)",
+"cc": "US",
+"type": "company"
+},
+"I881766915": {
+"name": "Nanjing University",
+"cc": "CN",
+"type": "education"
+},
+"I882645478": {
+"name": "Limerick Institute of Technology",
+"cc": "IE",
+"type": "education"
+},
+"I882953328": {
+"name": "Furtwangen University",
+"cc": "DE",
+"type": "education"
+},
+"I884043246": {
+"name": "Hamburg University of Technology",
+"cc": "DE",
+"type": "education"
+},
+"I88761825": {
+"name": "Korea University of Science and Technology",
+"cc": "KR",
+"type": "education"
+},
+"I887968799": {
+"name": "RWTH Aachen University",
+"cc": "DE",
+"type": "education"
+},
+"I889458895": {
+"name": "University of Hong Kong",
+"cc": "HK",
+"type": "education"
+},
+"I89015989": {
+"name": "Dankook University",
+"cc": "KR",
+"type": "education"
+},
+"I89440247": {
+"name": "Myongji University",
+"cc": "KR",
+"type": "education"
+},
+"I899635006": {
+"name": "Université Grenoble Alpes",
+"cc": "FR",
+"type": "education"
+},
+"I904495901": {
+"name": "Ruhr University Bochum",
+"cc": "DE",
+"type": "education"
+},
+"I90610280": {
+"name": "South China University of Technology",
+"cc": "CN",
+"type": "education"
+},
+"I90843659": {
+"name": "Université de Franche-Comté",
+"cc": "FR",
+"type": "education"
+},
+"I90965887": {
+"name": "SUNY Polytechnic Institute",
+"cc": "US",
+"type": "education"
+},
+"I91041137": {
+"name": "Assiut University",
+"cc": "EG",
+"type": "education"
+},
+"I91045830": {
+"name": "Texas A&M University",
+"cc": "US",
+"type": "education"
+},
+"I913958620": {
+"name": "Erasmus University Rotterdam",
+"cc": "NL",
+"type": "education"
+},
+"I91712215": {
+"name": "Saarland University",
+"cc": "DE",
+"type": "education"
+},
+"I91807558": {
+"name": "National Cheng Kung University",
+"cc": "TW",
+"type": "education"
+},
+"I919571938": {
+"name": "The University of Texas Health Science Center at Houston",
+"cc": "US",
+"type": "education"
+},
+"I9224756": {
+"name": "Northeastern University",
+"cc": "CN",
+"type": "education"
+},
+"I92894754": {
+"name": "Leibniz Institute for High Performance Microelectronics",
+"cc": "DE",
+"type": "facility"
+},
+"I93085520": {
+"name": "Silicon Labs (United States)",
+"cc": "US",
+"type": "company"
+},
+"I9360294": {
+"name": "University of Bologna",
+"cc": "IT",
+"type": "education"
+},
+"I93860229": {
+"name": "Politecnico di Milano",
+"cc": "IT",
+"type": "education"
+},
+"I94234084": {
+"name": "Indian Institute of Technology Kanpur",
+"cc": "IN",
+"type": "education"
+},
+"I94509681": {
+"name": "Technische Universität Braunschweig",
+"cc": "DE",
+"type": "education"
+},
+"I94518387": {
+"name": "Hanoi University of Science and Technology",
+"cc": "VN",
+"type": "education"
+},
+"I94588446": {
+"name": "Hongik University",
+"cc": "KR",
+"type": "education"
+},
+"I94624287": {
+"name": "University of Twente",
+"cc": "NL",
+"type": "education"
+},
+"I95457486": {
+"name": "University of California, Berkeley",
+"cc": "US",
+"type": "education"
+},
+"I95674353": {
+"name": "UCLouvain",
+"cc": "BE",
+"type": "education"
+},
+"I97018004": {
+"name": "Stanford University",
+"cc": "US",
+"type": "education"
+},
+"I9736820": {
+"name": "École de Technologie Supérieure",
+"cc": "CA",
+"type": "education"
+},
+"I98251732": {
+"name": "McMaster University",
+"cc": "CA",
+"type": "education"
+},
+"I98301712": {
+"name": "Baidu (China)",
+"cc": "CN",
+"type": "company"
+},
+"I98358874": {
+"name": "Delft University of Technology",
+"cc": "NL",
+"type": "education"
+},
+"I98381234": {
+"name": "University of Oulu",
+"cc": "FI",
+"type": "education"
+},
+"I9842412": {
+"name": "Nanjing University of Aeronautics and Astronautics",
+"cc": "CN",
+"type": "education"
+},
+"I98677209": {
+"name": "University of Edinburgh",
+"cc": "GB",
+"type": "education"
+},
+"I99065089": {
+"name": "Tsinghua University",
+"cc": "CN",
+"type": "education"
+},
+"I9927081": {
+"name": "Aalto University",
+"cc": "FI",
+"type": "education"
+},
+"I99464096": {
+"name": "KU Leuven",
+"cc": "BE",
+"type": "education"
+},
+"I99908691": {
+"name": "Yuan Ze University",
+"cc": "TW",
+"type": "education"
+}
+}
