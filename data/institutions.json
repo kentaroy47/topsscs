@@ -249,6 +249,11 @@
 "cc": "US",
 "type": "company"
 },
+"B-qualcomm-gb": {
+"name": "Qualcomm",
+"cc": "GB",
+"type": "company"
+},
 "B-qualcomm-us": {
 "name": "Qualcomm",
 "cc": "US",

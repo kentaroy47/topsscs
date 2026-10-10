@@ -8732,5 +8732,14 @@
 "I4210127702",
 "I880619579"
 ]
+},
+"I19268510": {
+"name": "Qualcomm (United Kingdom)",
+"cc": "GB",
+"type": "company",
+"lineage": [
+"I19268510",
+"I4210087596"
+]
 }
 }
